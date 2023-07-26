@@ -1,0 +1,69 @@
+/*ESTILO F O O T E R*/
+
+.contenedor-footer{
+    background-color:#DAF0F3;
+    border-radius: 3.125rem;
+    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+    color:#776140;
+    h2{
+        font-family: "extrabold-fond";
+        font-size: 2.5em;
+        text-align:center;
+        color:#776140 ;
+        margin-top: 5rem;
+        margin-bottom:5rem ;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content:space-evenly;
+    gap:10rem;
+    padding-bottom: 3.125rem;
+    .secciones-footer{
+        ul{
+            list-style: none;
+            li a{
+                font-family: "extrabold-fond";
+                color: #776140;
+                text-decoration: none;
+            }
+        }
+    }
+    .conteiner-direccion{
+        display: flex; 
+        .icono-ubicacion{
+            width: 4rem;
+            height: 4rem;
+            padding-right:2rem;
+        }
+        .texto-direccion{
+            font-family: "extrabold-fond";
+        }
+    }
+    .contenedor-redessociales{
+        h3{
+            font-family: "extrabold-fond";
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 0.5rem;
+            .iconos-redessociales{
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+    }
+    

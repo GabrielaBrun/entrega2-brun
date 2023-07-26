@@ -1,0 +1,52 @@
+
+/*ESTILO SECCIÓN A B O U T U S */
+
+section{
+        div{
+            .titulos{
+                font-family: "extrabold-fond";
+                font-size: 2.5em;
+                text-align:center;
+                color:#776140 ;
+                margin-top: 5rem;
+                margin-bottom:5rem ;
+            }
+        }
+        .seccion-aboutus{
+            display: flex;
+            gap: 5rem;
+            div{
+                .img-aboutus{
+                    width: 30rem; 
+                    height: 30rem;
+                    margin-left: 11rem;
+                }
+            }
+            .texto-aboutus{
+                p{
+                    font-family: "regular-fond";
+                    font-size:1.9rem ;
+                    color:#776140; 
+                    margin-right: 6rem;
+                    text-align: center;
+                    text-align: justify;
+                }
+            }
+        }
+}
+    
+    
+    
+
+
+
+
+
+
+.body{
+    background-color:#F9C5DC ;
+}
+
+
+
+

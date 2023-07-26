@@ -1,673 +1,355 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;  
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family:"extrabold-fond";
-    src: url("../assets/fonts/extrabold.ttf");
+  font-family: "extrabold-fond";
+  src: url("../assets/fonts/extrabold.ttf");
 }
 @font-face {
-    font-family: "regular-fond";
-    src: url("../assets/fonts/PlayfairDisplay-Regular.ttf");
+  font-family: "regular-fond";
+  src: url("../assets/fonts/PlayfairDisplay-Regular.ttf");
 }
-
-.body{
-    background-color: #F9C5DC;
-}
-
-/*ESTILOS SECCIÓN H O M E*/
-
 /*estilos nav*/
 .navbar {
-    background-color:#DAF0F3;
-    border-radius: 3.125rem;
-    margin-top: 1rem;
-    margin-bottom: 5rem;   
-    text-decoration: none;
-    font-family: "extrabold-fond";
-    color: #776140;
-    font-size: 1.5625rem;   
-}
-.nav-item a :hover{
-    color: #F9C5DC;
-    
-}
-.nav-item a{
-    color: #776140;
-}
-.logo{
-width: 13rem;
-height: 7rem;
-}
-
-.iconos-nav{
-    width: 2rem;
-    height: 2rem;
-}
-
-/* estilos main-INDEX*/
-
-/*estilo imagen principal-INDEX*/ 
-
-.principal{
-    background-image: url("../assets/img/foto-main.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 3.125rem;
-}
-
-/*Estilo texto: EAT ME*/
-.principal h1{
-    font-family: "extrabold-fond";
-    font-size: 4rem;
-    color:#F5F1EC;
-    text-align:center;
-    padding-top: 18rem;
-    padding-right:15rem;
-    padding-bottom:15rem ;
-    padding-left:15rem;
-}
-.principal a{
-    text-decoration: none;
-}
-
-/*estilo títulos*/
-
-.titulos{
-    font-family: "extrabold-fond";
-    font-size: 2.5em;
-    text-align:center;
-    color:#776140 ;
-    margin-top: 5rem;
-    margin-bottom:5rem ;
-}
-/* Estilo Imagen: bigdream+ texto:bigdream y Estilo Imagen:gifts+ estilo texto gifts-(INDEX)*/
-
-.conteiner{
-    display: flex;
-    justify-content:space-evenly;
-    gap: 1rem;   
-}
-.coneteiner-imagenes{
-    position: relative;
-}
-
-.img-bigdream{
-    width: 30rem; 
-    height: 30rem;
-}
-.img-gifts{
-    width: 30rem; 
-    height: 30rem;
-    }
-.texto-bigdream{
-    position: absolute;
-    top:13rem;
-    left: 7rem;
-    text-decoration: none;
-    font-family: "extrabold-fond";
-    font-size: 3.5rem;
-    color:#F5F1EC;
-}
-.texto-gifts{
-    position: absolute;
-    top:13rem;
-    left: 7rem;
-    text-decoration: none;
-    font-family: "extrabold-fond";
-    font-size:3.5rem;
-    color:#F5F1EC;
-}
-
-/*estilo imagen-aboutus + estilo parrafo-INDEX*/
-
-.seccion-aboutus{
-    display: flex;
-    gap:5rem;
-}
-
-.img-aboutus{
-width: 30rem; 
-height: 30rem;
-margin-left: 11rem;
-}
-
-.parrafo{
-font-family: "regular-fond";
-font-size:1.9rem ;
-color:#776140; 
-margin-right: 6rem;
-text-align: center;
-text-align: justify;
-}
-
-
-/*Estilos footer*/
-
-.contenedor-footer{
-    background-color:#DAF0F3;
-    border-radius: 3.125rem;
-    margin-bottom: 5rem;
-    margin-bottom: 1rem;
-    color:#776140;
-}
-
-.footer{
-    display: flex;
-    justify-content:space-evenly;
-    gap:10rem;
-    padding-bottom: 3.125rem;
-    }
-    
-/*estilos footer- primera columna*/
-
-.secciones-footer ul {
-        list-style: none;
-    }
-.secciones-footer ul li a{
-        font-family: "extrabold-fond";
-        color: #776140;
-        text-decoration: none;
-    }
-/*estilos footer- segunda columna*/
-.conteiner-direccion{
-    display: flex; 
-}
-.texto-direccion{
-    font-family: "extrabold-fond";
-
-}
-.icono-ubicacion{
-    width: 4rem;
-    height: 3rem;
-    padding-right:2rem;
-}
-
-/*estilos footer- tercera columna*/
-.contenedor-redessociales h3{
-    font-family: "extrabold-fond";
-    text-align: center;
-}
-.iconos-redessociales{
-    width: 3rem;
-    height: 3rem;
-}
-.redessociales{
-list-style: none;
-display: flex;
-gap: 0.5rem;
-
-}
-
-
-
-/*ESTILOS SECCIÓN T I E N D A*/
-
-/*cards macarons con FLEX*/
-.cards{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
-    gap: 7.5rem;
-    
-}
-
-.cards-img{
-    width: 10.75rem;
-    height: 10rem;
-    border-radius: 3.25rem;
-}
-.cards-texto{
-font-family: "extrabold-fond";
-color: #776140;
-text-align: center;
-font-size: 1.5rem;
-}
-
-.precio{
-font-family: "regular-fond";
-color: #776140;
-font-size: 1.5rem;
-
-}
-.button-shop{
-    border-radius: 3.125rem;
-    background-color:#F5F1EC;
-    border-style: none;
-    width: 4rem;
-    height: 2rem;
-    font-family: "extrabold-fond";
-    color: #776140;
-    font-size: 0.9rem;
-}
-
-
-/*estilos seccion TIENDA- gifts con GRID*/
-
-.galeria-texto p{
-    font-family:"extrabold-fond";
-    color:#776140;
-    text-align: center;
-    font-size:1.9rem;
-}
-
-
-.boxes{
-    display: grid;
-    grid-template-columns:50% 50%;
-    text-align: center;
-    gap: 3rem;
-
-}
-
-.box div p{
-margin-top: 1.25rem;
-}
-
-
-/*ESTILOS SECCIÓN T A K E A W A Y*/
-.takeaway-texto{
-    font-family:"extrabold-fond";
-    color:#776140;  
-    text-align: center;
-    font-size: 2rem;
-}
-.conteiner-takeaway{
-    margin: 2rem;
-}
-.conteiner-local{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-    margin-bottom: 5rem;
-}
-.takeaway{
-    font-family:"extrabold-fond";
-    color:#776140;  
-    text-align: center;
-    display: flex;
-    gap: 2rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-local{
-    width: 20rem;
-    height: 25rem;
-}
-.img-bici{
-    width: 20rem;
-    height: 25rem;
-}
-
-.conteiner-bici{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-/*ESTILOS SECCIÓN C O N T A C T O*/
-.contacto-texto{
-    color:#776140;
-    font-family:"extrabold-fond";
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 4rem;
-    font-size: 1.5rem;
-    text-align: justify;
-}
-
-.contacto{
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.formulario{
-    font-family:"extrabold-fond";
-    color:#776140;  
-    background-color: #DAF0F3;
-    border-radius: 3.125rem;
-}
-.formulario-texto-nombre{
-    display: flex;
-    flex-direction: column;
-}
-.formulario-texto-email{
-    display: flex;
-    flex-direction: column;
-}
-.formulario-texto-asunto{
-    display: flex;
-    flex-direction: column;
-}
-.formulario-texto-mensaje{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.formulario-boton{
-    margin-top: 1rem;
-}
-.button{
-    color:#776140;
-    font-family:"extrabold-fond";
-}
-.form{
-    margin-top: 5rem;
-    margin-right: 2rem;
-    margin-bottom: 5rem;
-    margin-left: 2rem;
-}
-
-.rectangulo{
-    border-radius: 3.125rem;
-    border-color:  #776140;
-}
-
-.map{
-    width: 400px;
-    height: 400px;
-    border-radius: 3.125rem;
-}
-
-/*ESTILOS LOG IN*/
-
-
-.log-in-texto{
+  background-color: #DAF0F3;
+  border-radius: 3.125rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  text-decoration: none;
+  font-family: "extrabold-fond";
   color: #776140;
-    font-family:"extrabold-fond";
+  font-size: 1.5625rem;
 }
 
-.formulario-login{
-    color: #776140;
-    font-family:"regular-fond"; 
-    margin: 0.5rem;
+.nav-item a :hover {
+  color: #F9C5DC;
 }
 
-
-/*RESPONSIVE MAX WIDTH 1024PX*/
-
-
-@media(max-width:1024px){
-    .navbar {
-        widh:100%;
-    }
-    .header{
-        width: 100%;
-    }
-    /*responsive max widht1024px-HOME*/
-    .principal{
-        width: 100%;
-        background-size: cover;
-        border-radius: 3.125rem;
-    }
-    .conteiner{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } 
-    .seccion-aboutus{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap:2rem;
-    }
-    .parrafo{
-    margin:2rem;
-    text-align: center;
-    text-align: justify;
-    align-items: center;
-    justify-content: center;
-    }
-    .img-aboutus{
-    margin: 3.5rem;
-    }
-/*responsive footer*/
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    gap:3rem;
-    }
-
-        .parrafo{
-            margin:2rem;
-            text-align: center;
-            text-align: justify;
-            align-items: center;
-            justify-content: center;
-            }
-
-
-
-
+.nav-item a {
+  color: #776140;
 }
 
-
-/*RESPONSIVE MAX WIDTH 768PX*/
-
-@media(max-width: 768px) {
-
-    .navbar {
-        widh:100%;
-    }
-    .header{
-        width: 100%;
-    }
-    /*responsive max widht 768px-sección HOME*/
-    .principal{
-        width: 100%;
-        background-size: cover;
-        border-radius: 3.125rem;
-    }
-    
-    .conteiner{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } 
-    .seccion-aboutus{
-        display: flex;
-        flex-direction: column;
-        
-        justify-content: center;
-        align-items: center;
-        gap:2rem;
-    }
-    .parrafo{
-    margin:2rem;
-    text-align: center;
-    text-align: justify;
-    align-items: center;
-    justify-content: center;
-    }
-
-/*responsive footer*/
-    .footer{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-        gap:3rem;
-        }
-
-/*responsive max widht 768px sección tienda*/
-
-.boxes{
-    margin: 2rem;
-    display: grid;
-    grid-template-columns:  1fr;
-    text-align: center;
-    gap: 2rem;
-}
-/*responsive max widht 768px  seccion take away*/
-.conteiner-local{
-    display: flex;
-    flex-direction: column;
-}
-.conteiner-bici{
-    display: flex;
-    flex-direction: column;
-    }
-
-
-/*responsive max width 768px seccion contacto*/
-
-.contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-
+.logo {
+  width: 16rem;
+  height: 8rem;
 }
 
-
+.iconos-nav {
+  width: 2rem;
+  height: 2rem;
 }
 
-
-
-/*RESPONSIVE MAX WIDTH 320PX*/
-
-
-@media(min-widh:320px){
-.header{
-    width: 100%;
+.principal {
+  background-image: url("../assets/img/foto-main.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 3.125rem;
 }
-.navbar{
-    width: 100%;
-}
-/*responsive max widht 320px-HOME*/
-.principal{
-    width: 100%;
-    background-size: contain;
-    border-radius: 3.125rem;
-}
-.principal h1{
-    text-align:center;
-    padding-top: 1rem;
-    padding-right:15rem;
-    padding-bottom:10rem ;
-    padding-left:15rem;
+.principal a {
+  text-decoration: none;
+  font-family: "extrabold-fond";
+  font-size: 4rem;
+  color: #F5F1EC;
+  text-align: center;
+  padding-top: 18rem;
+  padding-right: 15rem;
+  padding-bottom: 15rem;
+  padding-left: 15rem;
 }
 
-.img-bigdream{
-    width: 15rem;
-    height: 15rem;
-    }
-    
-.img-gifts{
-    width: 15rem;
-    height: 15rem;
-        }
-
-.seccion-aboutus{
-    display: flex;
-    flex-direction: column;
-    gap:4rem;
-    width: 300px;  
+section div .titulos {
+  font-family: "extrabold-fond";
+  font-size: 2.5em;
+  text-align: center;
+  color: #776140;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+section .conteiner {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+section .conteiner .conteiner-imagenes {
+  position: relative;
+}
+section .conteiner .conteiner-imagenes div .img-bigdream {
+  width: 30rem;
+  height: 30rem;
+}
+section .conteiner .conteiner-imagenes div .a {
+  position: absolute;
+  top: 13rem;
+  left: 7rem;
+  text-decoration: none;
+  font-family: "extrabold-fond";
+  font-size: 3.5rem;
+  color: #F5F1EC;
+}
+section .conteiner .conteiner-imagenes {
+  position: relative;
+}
+section .conteiner .conteiner-imagenes div .img-gifts {
+  width: 30rem;
+  height: 30rem;
+}
+section .conteiner .conteiner-imagenes div .texto-gifts {
+  position: absolute;
+  top: 13rem;
+  left: 7rem;
+  text-decoration: none;
+  font-family: "extrabold-fond";
+  font-size: 3.5rem;
+  color: #F5F1EC;
 }
 
-.img-aboutus{
-    width: 15rem;
-    height: 15rem;
-    }
-
-.parrafo{
-font-size:1.9rem ;
-color:#776140; 
-margin:2rem;
-text-align: center;
-text-align: justify;
-align-items: center;
-justify-content: center;
+.texto-gifts {
+  position: absolute;
+  top: 13rem;
+  left: 7rem;
+  text-decoration: none;
+  font-family: "extrabold-fond";
+  font-size: 3.5rem;
+  color: #F5F1EC;
 }
 
-
-
-/*responsive footer*/
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center; 
-    width:100%;  
-    }
-
-    .contenedor-footer{
-        width:100%
-    }
-/*responsive max widht 320px sección tienda*/
-.cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 7.5rem;
-    
+section div .titulos {
+  font-family: "extrabold-fond";
+  font-size: 2.5em;
+  text-align: center;
+  color: #776140;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+section .seccion-aboutus {
+  display: flex;
+  gap: 5rem;
+}
+section .seccion-aboutus div .img-aboutus {
+  width: 30rem;
+  height: 30rem;
+  margin-left: 11rem;
+}
+section .seccion-aboutus .texto-aboutus p {
+  font-family: "regular-fond";
+  font-size: 1.9rem;
+  color: #776140;
+  margin-right: 6rem;
+  text-align: center;
+  text-align: justify;
 }
 
-    .boxes{
-        margin: 2rem;
-        display: grid;
-        grid-template-columns:  1fr;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-    
-
-
-/*responsive max width 320px seccion take away*/
-.conteiner-local{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/*ESTILO F O O T E R*/
+.contenedor-footer {
+  background-color: #DAF0F3;
+  border-radius: 3.125rem;
+  margin-bottom: 5rem;
+  margin-bottom: 1rem;
+  color: #776140;
 }
-.conteiner-bici{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-
-.img-local{
-    width: 15rem;
-    height: 20rem;
-}
-.img-bici{
-    width: 15rem;
-    height: 20rem;
+.contenedor-footer h2 {
+  font-family: "extrabold-fond";
+  font-size: 2.5em;
+  text-align: center;
+  color: #776140;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
-
-/*responsive max width 320 seccion contacto*/
-
-.contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10rem;
+  padding-bottom: 3.125rem;
+}
+.footer .secciones-footer ul {
+  list-style: none;
+}
+.footer .secciones-footer ul li a {
+  font-family: "extrabold-fond";
+  color: #776140;
+  text-decoration: none;
+}
+.footer .conteiner-direccion {
+  display: flex;
+}
+.footer .conteiner-direccion .icono-ubicacion {
+  width: 4rem;
+  height: 4rem;
+  padding-right: 2rem;
+}
+.footer .conteiner-direccion .texto-direccion {
+  font-family: "extrabold-fond";
+}
+.footer .contenedor-redessociales h3 {
+  font-family: "extrabold-fond";
+  text-align: center;
+}
+.footer .contenedor-redessociales ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+.footer .contenedor-redessociales ul .iconos-redessociales {
+  width: 3rem;
+  height: 3rem;
 }
 
-
-
-
+/*ESTILO SECCIÓN A B O U T U S */
+section div .titulos {
+  font-family: "extrabold-fond";
+  font-size: 2.5em;
+  text-align: center;
+  color: #776140;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
+section .seccion-aboutus {
+  display: flex;
+  gap: 5rem;
+}
+section .seccion-aboutus div .img-aboutus {
+  width: 30rem;
+  height: 30rem;
+  margin-left: 11rem;
+}
+section .seccion-aboutus .texto-aboutus p {
+  font-family: "regular-fond";
+  font-size: 1.9rem;
+  color: #776140;
+  margin-right: 6rem;
+  text-align: center;
+  text-align: justify;
+}
+
+.body {
+  background-color: #F9C5DC;
+}
+
+/*ESTILO T A K E A W A Y*/
+main .titulos {
+  font-family: "extrabold-fond";
+  font-size: 2.5em;
+  text-align: center;
+  color: #776140;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+main .takeaway-texto {
+  font-family: "extrabold-fond";
+  color: #776140;
+  text-align: center;
+  font-size: 2rem;
+}
+main .conteiner-takeaway {
+  margin: 2rem;
+}
+main .conteiner-takeaway .conteiner-local {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 5rem;
+}
+main .conteiner-takeaway .conteiner-local div .img-local {
+  width: 20rem;
+  height: 25rem;
+}
+main .conteiner-takeaway .conteiner-local .takeaway {
+  font-family: "extrabold-fond";
+  color: #776140;
+  text-align: center;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .conteiner-takeaway .conteiner-local .conteiner-bici .img-bici {
+  width: 20rem;
+  height: 25rem;
+}
+
+/*ESTILO C O N T A C T O*/
+main .titulos {
+  font-family: "extrabold-fond";
+  font-size: 2.5em;
+  text-align: center;
+  color: #776140;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+main div .contacto-texto {
+  color: #776140;
+  font-family: "extrabold-fond";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+main div .contacto {
+  display: flex;
+  justify-content: space-evenly;
+}
+main div .contacto .formulario {
+  font-family: "extrabold-fond";
+  color: #776140;
+  background-color: #DAF0F3;
+  border-radius: 3.125rem;
+}
+main div .contacto .formulario .form {
+  margin-top: 5rem;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+}
+main div .contacto .formulario .form .formulario-texto-nombre {
+  display: flex;
+  flex-direction: column;
+}
+main div .contacto .formulario .form .formulario-texto-nombre .rectangulo {
+  border-radius: 3.125rem;
+  border-color: #776140;
+}
+main div .contacto .formulario .form .formulario-texto-email {
+  display: flex;
+  flex-direction: column;
+}
+main div .contacto .formulario .form .formulario-texto-email .rectangulo {
+  border-radius: 3.125rem;
+  border-color: #776140;
+}
+main div .contacto .formulario .form .formulario-texto-asunto {
+  display: flex;
+  flex-direction: column;
+}
+main div .contacto .formulario .form .formulario-texto-asunto .rectangulo {
+  border-radius: 3.125rem;
+  border-color: #776140;
+}
+main div .contacto .formulario .form .formulario-texto-mensaje {
+  display: flex;
+  flex-direction: column;
+}
+main div .contacto .formulario .form .formulario-texto-mensaje .rectangulo {
+  border-radius: 3.125rem;
+  border-color: #776140;
+}
+main div .contacto .formulario .form .formulario-boton .button {
+  margin-top: 1rem;
+}
+main div .contacto .map {
+  width: 400px;
+  height: 400px;
+  border-radius: 3.125rem;
+}
+
+/*# sourceMappingURL=style.css.map */

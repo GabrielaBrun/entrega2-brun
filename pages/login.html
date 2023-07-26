@@ -13,10 +13,10 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/img/logomacarons.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">HOME</a>
                         </li>
@@ -39,49 +39,26 @@
                             <a class="nav-link" href="../pages/carrito.html"><img class="iconos-nav" src="../assets/img/carrito.png" alt=""></a>
                         </li> 
                     </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
-        </nav>
-</header>
+        </nav>       
+    </header>
     <main>
-        <h2 class="titulos">CONTACTO</h2>
-        <div>
-            <div class="contacto-texto">
-                <p>¿En qué podemos ayudarte?</p>
-                <p>Completá el formulario y a la brevedad te estaremos respondiendo</p>
+        <section class="form-login">
+            <p class="texto-login">Log In</p>
+            <div>
+                <input class="controls" type="texto" name="usuario" value="" placeholder="Usuario">
+                <input class="controls" type="password" name="contraseña" value="" placeholder="Contraseña">
+                <div>
+                    <input class="button-login" type="submit" name="" value="Ingresar">
+                </div>
+                <a class="olvidar-contraseña" href=""><p>OLvidé mi contraseña</p></a>
             </div>
-            <div class="contacto">
-                    <div class="formulario">
-                        <form class="form" action="">
-                            <div class="formulario-texto-nombre">
-                                <label for="nombre">Nombre</label>
-                                <input class="rectangulo" type="text" name="" id="nombre" placeholder="ingresa aquí">
-                            </div>
-                            <div class="formulario-texto-email">
-                                <label for="email">Email</label>
-                                <input class="rectangulo"  type="text" name="" id="email" placeholder="ingrese aquí">
-                            </div>
-                            <div class="formulario-texto-asunto">
-                                <label for="asunto">Asunto</label>
-                                <input class="rectangulo" type="text" name="" id="asunto" placeholder="ingrese aquí">
-                            </div>
-                            <div class="formulario-texto-mensaje">
-                                <label for="mensaje">Mensaje</label>
-                                <input class="rectangulo" type="text">
-                            </div>
-                            <div class="formulario-boton">
-                                <input class="button"  type="submit"> 
-                            </div>       
-                        </form>
-                    </div>
-                    <div>
-                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6361193315156!2d-58.392440424549356!3d-34.5880727729599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa36fec11a1%3A0xb961eb56b1944f6!2sAyacucho%201930%2C%20C1112AAJ%20CABA!5e0!3m2!1ses-419!2sar!4v1688256111489!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>   
-        
+        </section>
     </main>
     <footer>
         <div class="contenedor-footer">

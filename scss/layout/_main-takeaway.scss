@@ -1,0 +1,54 @@
+/*ESTILO T A K E A W A Y*/
+
+main{
+    .titulos{
+        font-family: "extrabold-fond";
+        font-size: 2.5em;
+        text-align:center;
+        color:#776140 ;
+        margin-top: 5rem;
+        margin-bottom:5rem;
+    }
+    .takeaway-texto{
+        font-family:"extrabold-fond";
+        color:#776140;  
+        text-align: center;
+        font-size: 2rem;
+    }
+    .conteiner-takeaway{
+        margin: 2rem;
+        .conteiner-local{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.25rem;
+            margin-bottom: 5rem;
+            div{
+                .img-local{
+                    width: 20rem;
+                    height: 25rem;
+                }
+            }
+            .takeaway{
+                font-family:"extrabold-fond";
+                color:#776140;  
+                text-align: center;
+                display: flex;
+                gap: 2rem;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .conteiner-bici{
+                .img-bici{
+                    width: 20rem;
+                    height: 25rem;
+                }
+            }
+
+
+        }
+
+    }
+
+}

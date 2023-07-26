@@ -1,0 +1,29 @@
+
+/*estilos nav*/
+.navbar {
+        background-color:#DAF0F3;
+        border-radius: 3.125rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;   
+        text-decoration: none;
+        font-family: "extrabold-fond";
+        color: #776140;
+        font-size: 1.5625rem;   
+    }
+    .nav-item a :hover{
+        color: #F9C5DC;
+        
+    }
+    .nav-item a{
+        color: #776140;
+    }
+    .logo{
+    width: 16rem;
+    height: 8rem;
+    }
+    
+    .iconos-nav{
+        width: 2rem;
+        height: 2rem;
+    }
+   
