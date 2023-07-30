@@ -51,16 +51,21 @@
 /*responsive max width 320px seccion TAKEAWAY*/
 
 @media(max-width:320px){
-    .conteiner-takeaway{
+  
         .conteiner-local{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
-
+    }
+    .img-bici{
+        width: 15rem;
+        height: 20rem;
     }
     
+
+
+
 }
 
 
