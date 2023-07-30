@@ -16,26 +16,25 @@ main{
         font-size: 2rem;
     }
     .conteiner-takeaway{
-        margin: 2rem;
         .conteiner-local{
             display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap: 1.25rem;
-            margin-bottom: 5rem;
-            div{
+            gap: 2rem;
+            .contenedor-img-local{
                 .img-local{
                     width: 20rem;
                     height: 25rem;
                 }
             }
             .takeaway{
-                font-family:"extrabold-fond";
+                font-family:"regular-fond";
                 color:#776140;  
                 text-align: center;
                 display: flex;
-                gap: 2rem;
                 flex-direction: column;
+                gap: 2rem;
                 justify-content: center;
                 align-items: center;
             }

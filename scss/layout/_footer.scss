@@ -1,7 +1,7 @@
 /*ESTILO F O O T E R*/
 
 .contenedor-footer{
-    background-color:#DAF0F3;
+    background-color:$background-principal;
     border-radius: 3.125rem;
     margin-bottom: 5rem;
     margin-bottom: 1rem;
@@ -35,7 +35,7 @@
         display: flex; 
         .icono-ubicacion{
             width: 4rem;
-            height: 4rem;
+            padding-top: 0.625rem;
             padding-right:2rem;
         }
         .texto-direccion{

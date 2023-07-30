@@ -16,25 +16,18 @@
     .seccion-aboutus{
         display: flex;
         flex-direction: column;
-        gap:5rem;
-        div{
-            .img-aboutus{
-                width: 15rem;
-                height: 15rem;
-                margin-left:2rem;
-            }
-        }
-        .texto-aboutus{
-            p{
-                font-size:0.5rem;
-                margin-right: 2rem;
-                margin-left: 2rem;
-                text-align: center;
-                text-align: justify;
-            }
-        }
     }
-}
+    .img-aboutus{
+        width: 18rem;
+        height: 18rem;
+        margin-left:2rem;
+    }
+
+
+
+
+    }
+    
 
 
 /*responsive max width 320px seccion TIENDA*/
@@ -49,40 +42,63 @@
         gap: 7.5rem;
         
     }
-    .boxes{
-            margin: 2rem;
-            display: grid;
-            grid-template-columns:  1fr;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
+    .box{
+        flex-direction: column;  
         }
         
 }
 
-/*responsive max width 320px seccion TAKE AWAY*/
-@media(max-width: 320px){
-    .conteiner-local{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .conteiner-bici{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+/*responsive max width 320px seccion TAKEAWAY*/
+
+@media(max-width:320px){
+    .conteiner-takeaway{
+        .conteiner-local{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-    
-    .img-local{
-        width: 18rem;
-        height: 10rem;
-    }
-    .img-bici{
-        width: 18rem;
-        height: 10rem;
+
     }
     
+}
+
+
+
+
+
+
+
+/*responsive max width 320px seccion CONTACTO*/
+
+@media(max-width:320px){
+.titulos{
+    text-align: center;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    .contacto-texto{
+        text-align: center;
+    }
+}
+.formulario{
+    width: 300px;
+    height: 500px;
+}
+.formulario-texto-mensaje{
+  height: 150px;
+ }
+
+.map{
+    width:100%;
+}
+
+.footer{
+    width: 100%;
+}
+
 }

@@ -49,6 +49,9 @@
   background-position: center;
   border-radius: 3.125rem;
 }
+.principal .eatme {
+  font-size: 70px;
+}
 .principal a {
   text-decoration: none;
   font-family: "extrabold-fond";
@@ -59,10 +62,6 @@
   padding-right: 5rem;
   padding-bottom: 5rem;
   padding-left: 5rem;
-}
-.principal a a:hover {
-  transform: scale(1.1);
-  box-shadow: 13px 15px 37px black;
 }
 
 section div .titulos {
@@ -101,7 +100,7 @@ section div .titulos {
 }
 
 .eatme:hover {
-  transform: scale(3.1);
+  transform: scale(1.8);
 }
 
 /*ESTILO F O O T E R*/
@@ -140,7 +139,7 @@ section div .titulos {
 }
 .footer .conteiner-direccion .icono-ubicacion {
   width: 4rem;
-  height: 4rem;
+  padding-top: 0.625rem;
   padding-right: 2rem;
 }
 .footer .conteiner-direccion .texto-direccion {
@@ -206,27 +205,24 @@ main .takeaway-texto {
   text-align: center;
   font-size: 2rem;
 }
-main .conteiner-takeaway {
-  margin: 2rem;
-}
 main .conteiner-takeaway .conteiner-local {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1.25rem;
-  margin-bottom: 5rem;
+  gap: 2rem;
 }
-main .conteiner-takeaway .conteiner-local div .img-local {
+main .conteiner-takeaway .conteiner-local .contenedor-img-local .img-local {
   width: 20rem;
   height: 25rem;
 }
 main .conteiner-takeaway .conteiner-local .takeaway {
-  font-family: "extrabold-fond";
+  font-family: "regular-fond";
   color: #776140;
   text-align: center;
   display: flex;
-  gap: 2rem;
   flex-direction: column;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
 }
@@ -263,20 +259,21 @@ main div .contacto .formulario {
   font-family: "extrabold-fond";
   color: #776140;
   background-color: #f5f2f2;
-  border-radius: 3.125rem;
+  border-radius: 1.125rem;
 }
 main div .contacto .formulario .form {
-  margin-top: 5rem;
-  margin-right: 2rem;
-  margin-bottom: 5rem;
-  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 2rem;
 }
 main div .contacto .formulario .form .formulario-texto-nombre {
   display: flex;
   flex-direction: column;
 }
 main div .contacto .formulario .form .formulario-texto-nombre .rectangulo {
-  border-radius: 3.125rem;
+  border-radius: 0.3125rem;
+  border-style: solid;
   border-color: #776140;
 }
 main div .contacto .formulario .form .formulario-texto-email {
@@ -284,7 +281,8 @@ main div .contacto .formulario .form .formulario-texto-email {
   flex-direction: column;
 }
 main div .contacto .formulario .form .formulario-texto-email .rectangulo {
-  border-radius: 3.125rem;
+  border-radius: 0.3125rem;
+  border-style: solid;
   border-color: #776140;
 }
 main div .contacto .formulario .form .formulario-texto-asunto {
@@ -292,7 +290,8 @@ main div .contacto .formulario .form .formulario-texto-asunto {
   flex-direction: column;
 }
 main div .contacto .formulario .form .formulario-texto-asunto .rectangulo {
-  border-radius: 3.125rem;
+  border-radius: 0.3125rem;
+  border-style: solid;
   border-color: #776140;
 }
 main div .contacto .formulario .form .formulario-texto-mensaje {
@@ -300,18 +299,37 @@ main div .contacto .formulario .form .formulario-texto-mensaje {
   flex-direction: column;
 }
 main div .contacto .formulario .form .formulario-texto-mensaje .rectangulo {
-  border-radius: 3.125rem;
+  border-radius: 0.3125rem;
+  border-style: solid;
   border-color: #776140;
+  width: 236px;
+  height: 150px;
 }
 main div .contacto .formulario .form .formulario-boton .button {
-  margin-top: 1rem;
+  border-radius: 3.125rem;
+  background-color: #F5F1EC;
+  border-style: solid;
+  border-color: #776140;
+  width: 4rem;
+  height: 2rem;
+  font-family: "extrabold-fond";
+  color: #776140;
+  font-size: 0.9rem;
+  translate: 150px;
 }
-main div .contacto .map {
-  width: 400px;
-  height: 400px;
+main div .contacto div .map {
+  width: 500px;
+  height: 500px;
   border-radius: 3.125rem;
 }
 
+/*responsive max width 1024px seccion TAKEAWAY*/
+@media (max-width: 1024px) {
+  .conteiner-local {
+    display: flex;
+    flex-direction: row;
+  }
+}
 /*responsive max width 768px FOOTER*/
 @media (max-width: 768px) {
   .footer {
@@ -327,39 +345,26 @@ main div .contacto .map {
   .seccion-aboutus {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
   }
   .seccion-aboutus div .img-aboutus {
     width: 18rem;
     height: 18rem;
     margin-left: 2rem;
   }
-  .seccion-aboutus .texto-aboutus p {
+  .seccion-aboutus .texto-aboutus .texto-aboutus p {
     font-size: 0.5rem;
     margin-left: 6rem;
     text-align: center;
     text-align: justify;
   }
+  .img-aboutus {
+    width: 18rem;
+    height: 18rem;
+    margin-left: 2rem;
+  }
 }
 /*responsive max width 768px seccion TIENDA*/
-@media (max-width: 768px) {
-  .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 7.5rem;
-  }
-  .boxes {
-    margin: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-}
+/*responsive max width 768px seccion TAKE AWAY*/
 @media (max-width: 768px) {
   .conteiner-local {
     display: flex;
@@ -367,36 +372,32 @@ main div .contacto .map {
     justify-content: center;
     align-items: center;
   }
-  .conteiner-bici {
+}
+/*responsive max width 768px seccion CONTACTO*/
+@media (max-width: 768px) {
+  .titulos {
+    text-align: center;
+  }
+  .contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2.5rem;
   }
-  .img-local {
-    width: 15rem;
-    height: 20rem;
+  .formulario {
+    width: 300px;
+    height: 500px;
   }
-  .img-bici {
-    width: 15rem;
-    height: 20rem;
+  .formulario .formulario-texto-mensaje {
+    width: 100px;
+    height: 27px;
   }
-}
-@media (max-width: 768px) {
-  .seccion-aboutus {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+  .formulario .formulario-texto-mensaje {
+    height: 150px;
   }
-  .img-aboutus {
-    width: 15rem;
-    height: 15rem;
-  }
-  .parrafo {
-    font-size: 1.9rem;
-    margin: 2rem;
-    text-align: center;
-    text-align: justify;
+  .map {
+    width: 100%;
   }
 }
 /*responsive footer*/
@@ -414,19 +415,11 @@ main div .contacto .map {
   .seccion-aboutus {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
   }
-  .seccion-aboutus div .img-aboutus {
-    width: 15rem;
-    height: 15rem;
+  .img-aboutus {
+    width: 18rem;
+    height: 18rem;
     margin-left: 2rem;
-  }
-  .seccion-aboutus .texto-aboutus p {
-    font-size: 0.5rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    text-align: center;
-    text-align: justify;
   }
 }
 /*responsive max width 320px seccion TIENDA*/
@@ -438,37 +431,46 @@ main div .contacto .map {
     align-items: center;
     gap: 7.5rem;
   }
-  .boxes {
-    margin: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  .box {
+    flex-direction: column;
   }
 }
-/*responsive max width 320px seccion TAKE AWAY*/
+/*responsive max width 320px seccion TAKEAWAY*/
 @media (max-width: 320px) {
-  .conteiner-local {
+  .conteiner-takeaway .conteiner-local {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .conteiner-bici {
+}
+/*responsive max width 320px seccion CONTACTO*/
+@media (max-width: 320px) {
+  .titulos {
+    text-align: center;
+  }
+  .contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2.5rem;
   }
-  .img-local {
-    width: 18rem;
-    height: 10rem;
+  .contacto .contacto-texto {
+    text-align: center;
   }
-  .img-bici {
-    width: 18rem;
-    height: 10rem;
+  .formulario {
+    width: 300px;
+    height: 500px;
+  }
+  .formulario-texto-mensaje {
+    height: 150px;
+  }
+  .map {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
   }
 }
 /*Estilo sección T I E N D A*/
@@ -499,7 +501,7 @@ section .cards .cards-macarons {
 section .cards .cards-macarons .cards-img {
   width: 100%;
 }
-section .cards .cards-macarons .cards-texto {
+section .cards .cards-macarons .cards-texto, section .cards .cards-macarons .galeria .boxes .box .precio, .galeria .boxes .box section .cards .cards-macarons .precio {
   font-family: "extrabold-fond";
   color: #776140;
   text-align: center;
@@ -536,13 +538,12 @@ section .cards .cards-macarons .button-shop {
   font-size: 1.9rem;
 }
 .galeria .boxes {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 4rem;
-  margin-top: 5rem;
-  align-content: center;
-  justify-content: center;
 }
 .galeria .boxes .box {
   background-color: #f5f2f2;
@@ -556,7 +557,7 @@ section .cards .cards-macarons .button-shop {
 .galeria .boxes .box img {
   width: 100%;
 }
-.galeria .boxes .box .cards-texto {
+.galeria .boxes .box .cards-texto, .galeria .boxes .box .precio {
   font-family: "extrabold-fond";
   color: #776140;
   text-align: center;
@@ -564,8 +565,6 @@ section .cards .cards-macarons .button-shop {
 }
 .galeria .boxes .box .precio {
   font-family: "regular-fond";
-  color: #776140;
-  font-size: 1.5rem;
 }
 .galeria .boxes .box .button-shop {
   border-radius: 3.125rem;

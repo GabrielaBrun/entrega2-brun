@@ -4,12 +4,7 @@
 
 section{
     .titulos{
-        font-family: "extrabold-fond";
-        font-size: 2.5em;
-        text-align:center;
-        color:#776140 ;
-        margin-top: 5rem;
-        margin-bottom:5rem ;
+        @include estilotitulos;
     }
     .cards{
         display: flex;
@@ -72,13 +67,14 @@ section{
         }
     }
     .boxes{
-        display: grid;
-        grid-template-columns:50% 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         gap:4rem;
-        margin-top:5rem;
-        align-content: center;
-       justify-content: center;
+   
+      
         .box{
             background-color: #f5f2f2;
             box-shadow: 7px 7px 13px #313131;
@@ -97,9 +93,8 @@ section{
                 font-size: 1.5rem;
             }
             .precio{
+                @extend .cards-texto;
                 font-family: "regular-fond";
-                color: #776140;
-                font-size: 1.5rem;
             }
             .button-shop{
                 border-radius: 3.125rem;

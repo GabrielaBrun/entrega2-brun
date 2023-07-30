@@ -1,0 +1,14 @@
+@mixin estilotitulos{
+    font-family: "extrabold-fond";
+            font-size: 2.5em;
+            text-align:center;
+            color:#776140 ;
+            margin-top: 5rem;
+            margin-bottom:5rem ;
+}
+
+@mixin espacio-form{
+    border-radius:0.3125rem;
+     border-style: solid;
+      border-color:  #776140;
+}

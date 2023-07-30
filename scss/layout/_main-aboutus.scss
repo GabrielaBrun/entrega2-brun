@@ -4,12 +4,7 @@
 section{
         div{
             .titulos{
-                font-family: "extrabold-fond";
-                font-size: 2.5em;
-                text-align:center;
-                color:#776140 ;
-                margin-top: 5rem;
-                margin-bottom:5rem ;
+                @include estilotitulos;
             }
         }
         .seccion-aboutus{
