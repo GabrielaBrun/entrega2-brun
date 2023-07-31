@@ -9,12 +9,12 @@ section{
         }
         .seccion-aboutus{
             display: flex;
-            gap: 5rem;
+            gap: 4rem;
             div{
                 .img-aboutus{
-                    width: 30rem; 
-                    height: 30rem;
-                    margin-left: 11rem;
+                    width: 25rem; 
+                    height: 25rem;
+                    margin-left: 2rem;
                 }
             }
             .texto-aboutus{
@@ -22,7 +22,7 @@ section{
                     font-family: "regular-fond";
                     font-size:1.9rem ;
                     color:#776140; 
-                    margin-right: 6rem;
+                    margin-right: 2rem;
                     text-align: center;
                     text-align: justify;
                 }

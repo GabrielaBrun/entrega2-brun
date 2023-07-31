@@ -19,6 +19,7 @@ main{
         .conteiner-local{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             gap: 2rem;
@@ -30,6 +31,7 @@ main{
             }
             .takeaway{
                 font-family:"regular-fond";
+                font-size: 1.5rem;
                 color:#776140;  
                 text-align: center;
                 display: flex;

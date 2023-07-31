@@ -19,29 +19,24 @@
     .seccion-aboutus{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
         div{
             .img-aboutus{
                 width: 18rem;
                 height: 18rem;
-                margin-left:2rem;
+                translate: 150px;
             }
         }
         .texto-aboutus{
-            .texto-aboutus p{
+            p{
                 font-size:0.5rem;
-                margin-left: 6rem;
+                margin-left: 2rem;
                 text-align: center;
                 text-align: justify;
             }
         }
     }
-    .img-aboutus{
-        width: 18rem;
-        height: 18rem;
-        margin-left:2rem;
-    }
-
-
 }
 
 /*responsive max width 768px seccion TIENDA*/
@@ -63,6 +58,7 @@
         justify-content: center;
         align-items: center;
     }
+
 }
 
 
@@ -106,3 +102,6 @@
 
     }
 }
+
+
+

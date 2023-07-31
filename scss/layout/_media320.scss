@@ -16,17 +16,23 @@
     .seccion-aboutus{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
     .img-aboutus{
-        width: 18rem;
-        height: 18rem;
-        margin-left:2rem;
+        width: 15rem;
+        height: 15rem;;
     }
 
-
-
-
+    .texto-aboutus{
+        p{
+            font-size:0.5rem;
+            text-align: center;
+            text-align: justify;
+        }
     }
+}
     
 
 
@@ -63,7 +69,13 @@
         height: 20rem;
     }
     
-
+    .takeaway{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 }
