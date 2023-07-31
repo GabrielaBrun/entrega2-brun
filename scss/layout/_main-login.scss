@@ -1,0 +1,14 @@
+.form-login{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    .texto-login{
+        font-family: "extrabold-fond";
+        color:#776140 ;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+

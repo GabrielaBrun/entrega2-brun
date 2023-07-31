@@ -11,7 +11,18 @@
         gap:3rem;
         }
 }
+/*responsive max width 768px seccion Home*/
+@media(max-width:768px){
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    
 
+}
 
 
 /*Responsive max width 768px seccion ABOUT US*/

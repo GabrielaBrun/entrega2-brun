@@ -1,3 +1,6 @@
+
+/*Estilo sección H O M E*/
+
 .principal{
     background-image: url("../assets/img/foto-main.jpg");
     background-size: cover;
@@ -55,6 +58,9 @@ section{
                 font-size: 3.5rem;
                 color:#F5F1EC;
             }
+            a:hover{
+                transform: scale(1.4);
+            }
         }
     }
     .conteiner-gift{
@@ -75,38 +81,18 @@ section{
                 font-size: 3.5rem;
                 color:#F5F1EC;
             }
+            a:hover{
+                transform: scale(1.4);
+            }
         }
 
     }
 }
 
-/*
-.img-gifts{
-    width: 25rem; 
-    height: 25rem;
-    }
-.texto-bigdream{
-    position: absolute;
-    top:13rem;
-    left: 7rem;
-    text-decoration: none;
-    font-family: "extrabold-fond";
-    font-size: 3.5rem;
-    color:#F5F1EC;
-}
-.texto-gifts{
-    position: absolute;
-    top:13rem;
-    left: 7rem;
-    text-decoration: none;
-    font-family: "extrabold-fond";
-    font-size:3.5rem;
-    color:#F5F1EC;
-}
-*/
 
 
-/*Estilo seccion about*/
+
+/*Estilo seccion about us-dentro de HOME*/
 
 section{
     div{
