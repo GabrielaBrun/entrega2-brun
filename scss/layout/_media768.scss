@@ -78,6 +78,10 @@
         justify-content: center;
         align-items: center;
         gap: 2.5rem;
+        .contacto-texto{
+            text-align: center;
+            text-align: justify;
+        }
     }
     .formulario{
         width: 300px;
@@ -89,17 +93,14 @@
     
 
         .formulario-texto-mensaje{
-           height: 150px;
-         }
+        height: 150px;
+        }
         
-
-
 
     }
     
     .map{
-      width: 100%;
-
+    width: 100%;
     }
 }
 

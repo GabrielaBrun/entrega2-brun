@@ -68,16 +68,6 @@
         width: 15rem;
         height: 20rem;
     }
-    
-    .takeaway{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
-    }
-
-
 }
 
 
@@ -100,6 +90,7 @@
     gap: 2.5rem;
     .contacto-texto{
         text-align: center;
+        text-align: justify;
     }
 }
 .formulario{
@@ -113,9 +104,4 @@
 .map{
     width:100%;
 }
-
-.footer{
-    width: 100%;
-}
-
 }

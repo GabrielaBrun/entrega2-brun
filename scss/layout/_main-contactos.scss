@@ -27,7 +27,7 @@ main{
                 .form{
                     display: flex;
                     flex-direction: column;
-                    gap: 10px;
+                    gap: 8px;
                     margin: 2rem; 
                     .formulario-texto-nombre{
                         display: flex;
@@ -77,8 +77,8 @@ main{
             }
             div{
                 .map{
-                    width: 500px;
-                    height: 500px;
+                    width: 350px;
+                    height: 450px;
                     border-radius: 3.125rem;
                 }
             }
