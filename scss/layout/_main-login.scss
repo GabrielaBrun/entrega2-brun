@@ -1,7 +1,12 @@
 .form-login{
-    background-color: aliceblue;
+    position: relative;
+    background-color:#f5f2f2;
+    border-radius:1.125rem;
     display: flex;
     flex-direction: column;
+    width: 300px;
+    height: 300px;
+    padding: 1.5rem;
     .texto-login{
         font-family: "extrabold-fond";
         color:#776140 ;
@@ -9,6 +14,36 @@
     div{
         display: flex;
         flex-direction: column;
+        gap: 20px;
+        div{
+            .controls{
+                border-radius:1.125rem;
+                width: 250px;
+                height: 30px;
+                border-style: solid;
+                border-color: #776140;
+            }
+        }
+        div{
+            .button-login{
+                border-radius:1.125rem;
+                background-color:#F5F1EC;
+                border-style: solid;
+                border-color: #776140;
+                width: 4rem;
+                height: 2rem;
+                font-family: "extrabold-fond";
+                color: #776140;
+                font-size: 0.9rem;
+                translate: 200px;
+            }
+        }
+        a{
+            text-decoration: none;
+            font-family: "regular-fond";
+            color:#776140;
+            text-align: end;
+        }
     }
 }
 

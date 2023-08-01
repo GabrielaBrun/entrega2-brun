@@ -25,10 +25,6 @@
   font-size: 1.5625rem;
 }
 
-.nav-item a :hover {
-  color: #F9C5DC;
-}
-
 .nav-item a {
   color: #776140;
 }
@@ -41,6 +37,16 @@
 .iconos-nav {
   width: 2rem;
   height: 2rem;
+}
+
+.vacio {
+  color: #776140;
+  font-family: "extrabold-fond";
+}
+
+.dropdown-menu .iconos-nav {
+  position: relative;
+  left: 50px;
 }
 
 /*Estilo sección H O M E*/
@@ -115,7 +121,7 @@ section div .titulos {
   color: #F5F1EC;
 }
 .conteiner .conteiner-gift div a:hover {
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 
 /*Estilo seccion about us-dentro de HOME*/
@@ -146,7 +152,7 @@ section .seccion-aboutus .texto-aboutus p {
 }
 
 .eatme:hover {
-  transform: scale(1.8);
+  transform: scale(1.5);
 }
 
 /*ESTILO F O O T E R*/
@@ -254,7 +260,6 @@ main .takeaway-texto {
 main .conteiner-takeaway .conteiner-local {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -395,9 +400,14 @@ section .cards .cards-macarons .button-shop {
 }
 
 .form-login {
-  background-color: aliceblue;
+  position: relative;
+  background-color: #f5f2f2;
+  border-radius: 1.125rem;
   display: flex;
   flex-direction: column;
+  width: 300px;
+  height: 300px;
+  padding: 1.5rem;
 }
 .form-login .texto-login {
   font-family: "extrabold-fond";
@@ -406,6 +416,32 @@ section .cards .cards-macarons .button-shop {
 .form-login div {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+.form-login div div .controls {
+  border-radius: 1.125rem;
+  width: 250px;
+  height: 30px;
+  border-style: solid;
+  border-color: #776140;
+}
+.form-login div div .button-login {
+  border-radius: 1.125rem;
+  background-color: #F5F1EC;
+  border-style: solid;
+  border-color: #776140;
+  width: 4rem;
+  height: 2rem;
+  font-family: "extrabold-fond";
+  color: #776140;
+  font-size: 0.9rem;
+  translate: 200px;
+}
+.form-login div a {
+  text-decoration: none;
+  font-family: "regular-fond";
+  color: #776140;
+  text-align: end;
 }
 
 /*ESTILO C O N T A C T O*/
@@ -547,32 +583,33 @@ main div .contacto div .map {
 }
 /*Responsive max width 768px seccion ABOUT US*/
 @media (max-width: 768px) {
-  .seccion-aboutus {
+  section .seccion-aboutus {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-direction: column;
+    gap: 4rem;
   }
-  .seccion-aboutus div .img-aboutus {
-    width: 18rem;
-    height: 18rem;
-    translate: 150px;
-  }
-  .seccion-aboutus .texto-aboutus p {
-    font-size: 0.5rem;
-    margin-left: 2rem;
-    text-align: center;
-    text-align: justify;
+  section .seccion-aboutus div .img-aboutus {
+    width: 25rem;
+    height: 25rem;
   }
 }
 /*responsive max width 768px seccion TIENDA*/
 /*responsive max width 768px seccion TAKE AWAY*/
 @media (max-width: 768px) {
-  .conteiner-local {
+  main .conteiner-takeaway .conteiner-local {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+  }
+  main .conteiner-takeaway .conteiner-local .contenedor-img-local .img-local {
+    width: 20rem;
+    height: 25rem;
+  }
+  main .conteiner-takeaway .conteiner-local .takeaway {
+    font-size: 1.1rem;
+  }
+  main .conteiner-takeaway .conteiner-local .conteiner-bici .img-bici {
+    width: 20rem;
+    height: 25rem;
   }
 }
 /*responsive max width 768px seccion CONTACTO*/
@@ -628,20 +665,16 @@ main div .contacto div .map {
 }
 /*Responsive max width 320px seccion ABOUT US*/
 @media (max-width: 320px) {
-  .seccion-aboutus {
+  section .seccion-aboutus {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 4rem;
   }
-  .img-aboutus {
+  section .seccion-aboutus div {
+    position: relative;
+  }
+  section .seccion-aboutus div .img-aboutus {
     width: 15rem;
     height: 15rem;
-  }
-  .texto-aboutus p {
-    font-size: 0.5rem;
-    text-align: center;
-    text-align: justify;
   }
 }
 /*responsive max width 320px seccion TIENDA*/
@@ -659,15 +692,21 @@ main div .contacto div .map {
 }
 /*responsive max width 320px seccion TAKEAWAY*/
 @media (max-width: 320px) {
-  .conteiner-local {
+  main .conteiner-takeaway .conteiner-local {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
-  .img-bici {
-    width: 15rem;
-    height: 20rem;
+  main .conteiner-takeaway .conteiner-local .contenedor-img-local .img-local {
+    width: 20rem;
+    height: 25rem;
+  }
+  main .conteiner-takeaway .conteiner-local .takeaway {
+    font-size: 1.1rem;
+  }
+  main .conteiner-takeaway .conteiner-local .conteiner-bici .img-bici {
+    width: 20rem;
+    height: 25rem;
   }
 }
 /*responsive max width 320px seccion CONTACTO*/

@@ -25,27 +25,30 @@
 
 /*Responsive max width 320px seccion ABOUT US*/
 @media(max-width: 320px){
-    .seccion-aboutus{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-    .img-aboutus{
-        width: 15rem;
-        height: 15rem;;
-    }
-
-    .texto-aboutus{
-        p{
-            font-size:0.5rem;
-            text-align: center;
-            text-align: justify;
+    section{
+        div{
+            .titulos{
+            }
         }
-    }
+        .seccion-aboutus{
+            display: flex;
+            gap: 4rem;
+            div{
+                position: relative;
+                .img-aboutus{
+                    width: 15rem; 
+                    height: 15rem;
+                }
+            }
+            .texto-aboutus{
+                p{
+                }
+            }
+        }
 }
     
+    
+}
 
 
 /*responsive max width 320px seccion TIENDA*/
@@ -68,17 +71,34 @@
 
 /*responsive max width 320px seccion TAKEAWAY*/
 
-@media(max-width:320px){
-  
-        .conteiner-local{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-    }
-    .img-bici{
-        width: 15rem;
-        height: 20rem;
+@media (max-width:320px){
+main{
+        .titulos{
+        }
+        .takeaway-texto{
+        }
+        .conteiner-takeaway{
+            .conteiner-local{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .contenedor-img-local{
+                    .img-local{
+                        width: 20rem;
+                        height: 25rem;
+                    }
+                }
+                .takeaway{
+                    font-size: 1.1rem;
+                }
+                .conteiner-bici{
+                    .img-bici{
+                        width: 20rem;
+                        height: 25rem;
+                    }
+                }  
+            }
+        }
     }
 }
 
@@ -90,7 +110,7 @@
 
 /*responsive max width 320px seccion CONTACTO*/
 
-@media(max-width:320px){
+@media (max-width:320px){
 .titulos{
     text-align: center;
 }

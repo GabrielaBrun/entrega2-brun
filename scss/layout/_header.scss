@@ -10,10 +10,6 @@
         color: #776140;
         font-size: 1.5625rem;   
     }
-    .nav-item a :hover{
-        color: #F9C5DC;
-        
-    }
     .nav-item a{
         color: #776140;
     }
@@ -25,4 +21,16 @@
     .iconos-nav{
         width: 2rem;
         height: 2rem;
+    }
+
+    .vacio{
+        color: #776140;
+        font-family: "extrabold-fond";
+    }
+
+    .dropdown-menu{
+        .iconos-nav{
+            position: relative;
+            left: 50px;
+        }
     }

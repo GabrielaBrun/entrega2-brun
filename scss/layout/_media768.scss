@@ -27,34 +27,34 @@
 
 /*Responsive max width 768px seccion ABOUT US*/
 @media(max-width: 768px){
-    .seccion-aboutus{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-direction: column;
+    section{
         div{
-            .img-aboutus{
-                width: 18rem;
-                height: 18rem;
-                translate: 150px;
+            .titulos{
             }
         }
-        .texto-aboutus{
-            p{
-                font-size:0.5rem;
-                margin-left: 2rem;
-                text-align: center;
-                text-align: justify;
+        .seccion-aboutus{
+            display: flex;
+            gap: 4rem;
+            div{
+                .img-aboutus{
+                    width: 25rem; 
+                    height: 25rem;
+                }
+            }
+            .texto-aboutus{
+                p{
+                }
             }
         }
-    }
+}
+    
+    
 }
 
 /*responsive max width 768px seccion TIENDA*/
 
 
 @media(max-width:768px){
-   
     
 }
 
@@ -62,20 +62,38 @@
 
 /*responsive max width 768px seccion TAKE AWAY*/
 
-@media(max-width:768px){
-    .conteiner-local{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+
+@media (max-width:768px){
+    main{
+            .titulos{
+            }
+            .takeaway-texto{
+            }
+            .conteiner-takeaway{
+                .conteiner-local{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .contenedor-img-local{
+                        .img-local{
+                            width: 20rem;
+                            height: 25rem;
+                        }
+                    }
+                    .takeaway{
+                        font-size: 1.1rem;
+                    }
+                    .conteiner-bici{
+                        .img-bici{
+                            width: 20rem;
+                            height: 25rem;
+                        }
+                    }  
+                }
+            }
+        }
     }
-
-}
-
-
-
-
-
 
 
 /*responsive max width 768px seccion CONTACTO*/
