@@ -2,36 +2,33 @@
 /*ESTILO SECCIÓN A B O U T U S */
 
 section{
-        div{
-            .titulos{
-                @include estilotitulos;
+    div{
+        .titulos{
+            @include estilotitulos;
+        }
+    }
+    .seccion-aboutus{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap:4rem;
+        margin: 4rem;
+        .img-aboutus{
+                width:480px; 
+                height: 400px;
+            }
+        
+        .texto-aboutus{
+            p{
+                font-family: "regular-fond";
+                font-size: 22px;
+                color:#776140; 
+                text-align:center;
             }
         }
-        .seccion-aboutus{
-            display: flex;
-            gap: 4rem;
-            div{
-                .img-aboutus{
-                    width: 25rem; 
-                    height: 25rem;
-                    margin-left: 2rem;
-                }
-            }
-            .texto-aboutus{
-                p{
-                    font-family: "regular-fond";
-                    font-size:1.9rem ;
-                    color:#776140; 
-                    margin-right: 2rem;
-                    text-align: center;
-                    text-align: justify;
-                }
-            }
-        }
+    }
 }
-    
-    
-    
+
 
 
 

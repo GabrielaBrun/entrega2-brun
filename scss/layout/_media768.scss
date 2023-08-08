@@ -27,29 +27,33 @@
 
 /*Responsive max width 768px seccion ABOUT US*/
 @media(max-width: 768px){
-    section{
-        div{
-            .titulos{
-            }
-        }
+
         .seccion-aboutus{
             display: flex;
-            gap: 4rem;
-            div{
-                .img-aboutus{
-                    width: 25rem; 
-                    height: 25rem;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            gap:4rem;
+            margin: 4rem;
+            .img-aboutus{
+                    width:480px; 
+                    height: 400px;
                 }
-            }
+            
             .texto-aboutus{
                 p{
+                    font-family: "regular-fond";
+                    font-size: 22px;
+                    color:#776140; 
+                    text-align:center;
                 }
             }
         }
-}
-    
     
 }
+
+
+    
 
 /*responsive max width 768px seccion TIENDA*/
 

@@ -22,7 +22,7 @@
   text-decoration: none;
   font-family: "extrabold-fond";
   color: #776140;
-  font-size: 1.5625rem;
+  font-size: 1.25rem;
 }
 
 .nav-item a {
@@ -135,20 +135,20 @@ section div .titulos {
 }
 section .seccion-aboutus {
   display: flex;
-  gap: 5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4rem;
+  margin: 4rem;
 }
-section .seccion-aboutus div .img-aboutus {
-  width: 25rem;
-  height: 25rem;
-  margin-left: 2rem;
+section .seccion-aboutus .img-aboutus {
+  width: 480px;
+  height: 400px;
 }
 section .seccion-aboutus .texto-aboutus p {
   font-family: "regular-fond";
-  font-size: 1.9rem;
+  font-size: 22px;
   color: #776140;
-  margin-right: 2rem;
   text-align: center;
-  text-align: justify;
 }
 
 .eatme:hover {
@@ -222,20 +222,20 @@ section div .titulos {
 }
 section .seccion-aboutus {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   gap: 4rem;
+  margin: 4rem;
 }
-section .seccion-aboutus div .img-aboutus {
-  width: 25rem;
-  height: 25rem;
-  margin-left: 2rem;
+section .seccion-aboutus .img-aboutus {
+  width: 480px;
+  height: 400px;
 }
 section .seccion-aboutus .texto-aboutus p {
   font-family: "regular-fond";
-  font-size: 1.9rem;
+  font-size: 22px;
   color: #776140;
-  margin-right: 2rem;
   text-align: center;
-  text-align: justify;
 }
 
 .body {
@@ -583,13 +583,23 @@ main div .contacto div .map {
 }
 /*Responsive max width 768px seccion ABOUT US*/
 @media (max-width: 768px) {
-  section .seccion-aboutus {
+  .seccion-aboutus {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 4rem;
+    margin: 4rem;
   }
-  section .seccion-aboutus div .img-aboutus {
-    width: 25rem;
-    height: 25rem;
+  .seccion-aboutus .img-aboutus {
+    width: 480px;
+    height: 400px;
+  }
+  .seccion-aboutus .texto-aboutus p {
+    font-family: "regular-fond";
+    font-size: 22px;
+    color: #776140;
+    text-align: center;
   }
 }
 /*responsive max width 768px seccion TIENDA*/
@@ -665,16 +675,21 @@ main div .contacto div .map {
 }
 /*Responsive max width 320px seccion ABOUT US*/
 @media (max-width: 320px) {
-  section .seccion-aboutus {
+  .seccion-aboutus {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 4rem;
+    margin: 1rem;
   }
-  section .seccion-aboutus div {
-    position: relative;
+  .seccion-aboutus .img-aboutus {
+    width: 100px;
+    height: 100px;
   }
-  section .seccion-aboutus div .img-aboutus {
-    width: 15rem;
-    height: 15rem;
+  .seccion-aboutus .texto-aboutus p {
+    font-size: 10px;
+    text-align: center;
   }
 }
 /*responsive max width 320px seccion TIENDA*/
