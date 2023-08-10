@@ -1,27 +1,5 @@
 
 /*Responsive max width 1024px seccion ABOUT US*/
-@media(max-width: 1024px){
-    .seccion-aboutus{
-        display: flex;
-        flex-direction: column;
-        div{
-            .img-aboutus{
-                width: 18rem;
-                height: 18rem;
-                translate: 250px;
-            }
-        }
-        .texto-aboutus{
-            .texto-aboutus p{
-                font-size:0.5rem;
-                margin-left: 3rem;
-                text-align: center;
-                text-align: justify;
-            }
-        }
-    }
-}
-
 
 
 

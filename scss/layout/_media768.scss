@@ -27,28 +27,90 @@
 
 /*Responsive max width 768px seccion ABOUT US*/
 @media(max-width: 768px){
-
-        .seccion-aboutus{
+    .seccion-aboutus{
+        display: flex;
+        flex-direction: column;
+        .contenedor-aboutus1{
             display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            flex-direction:row;
+            justify-content: center;
             align-items: center;
-            gap:4rem;
-            margin: 4rem;
-            .img-aboutus{
-                    width:480px; 
-                    height: 400px;
+            gap: 3rem;
+            div{
+                .img-aboutus{
+                    width: 250px;
+                    height: 250px;
+                    box-shadow: 2px 2px 4px #313131;
+                    border-radius: 1.125rem;
                 }
-            
-            .texto-aboutus{
+            }
+            div{
+                :first-child{
+                font-family: "extrabold-fond";
+                }
                 p{
-                    font-family: "regular-fond";
-                    font-size: 22px;
-                    color:#776140; 
-                    text-align:center;
+                font-family: "regular-fond";
+                font-size: 22px;
+                color:#776140; 
+                text-align:center;
                 }
             }
         }
+        .contenedor-aboutus2{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            div{
+                .img-aboutus{
+                    width: 250px;
+                    height: 250px;
+                    box-shadow: 2px 2px 4px #313131;
+                    border-radius: 1.125rem;
+                }
+            }
+            div{
+                :first-child{
+                font-family: "extrabold-fond";
+                }
+                p{
+                font-family: "regular-fond";
+                font-size: 22px;
+                color:#776140; 
+                text-align:center;
+                }
+            }
+        }
+        .contenedor-aboutus3{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            div{
+                .img-aboutus{
+                    width: 250px;
+                    height: 250px;
+                    box-shadow: 2px 2px 4px #313131;
+                    border-radius: 1.125rem;
+                }
+            }
+            div{
+                :first-child{
+                font-family: "extrabold-fond";
+                }
+                p{
+                font-family: "regular-fond";
+                font-size: 22px;
+                color:#776140; 
+                text-align:center;
+                }
+            }
+        }    
+    }
+    
+        
     
 }
 

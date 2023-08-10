@@ -91,6 +91,8 @@ section div .titulos {
 .conteiner .conteiner-imagenes div .img-bigdream {
   width: 30rem;
   height: 25rem;
+  box-shadow: 4px 4px 8px #313131;
+  border-radius: 3.125rem;
 }
 .conteiner .conteiner-imagenes div a {
   position: absolute;
@@ -110,6 +112,8 @@ section div .titulos {
 .conteiner .conteiner-gift div .img-regalo {
   width: 30rem;
   height: 25rem;
+  box-shadow: 4px 4px 8px #313131;
+  border-radius: 3.125rem;
 }
 .conteiner .conteiner-gift div a {
   position: absolute;
@@ -143,6 +147,8 @@ section .seccion-aboutus {
 section .seccion-aboutus .img-aboutus {
   width: 480px;
   height: 400px;
+  box-shadow: 4px 4px 8px #313131;
+  border-radius: 3.125rem;
 }
 section .seccion-aboutus .texto-aboutus p {
   font-family: "regular-fond";
@@ -222,16 +228,69 @@ section div .titulos {
 }
 section .seccion-aboutus {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+}
+section .seccion-aboutus .contenedor-aboutus1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  gap: 4rem;
-  margin: 4rem;
+  gap: 3rem;
 }
-section .seccion-aboutus .img-aboutus {
-  width: 480px;
-  height: 400px;
+section .seccion-aboutus .contenedor-aboutus1 div .img-aboutus {
+  width: 250px;
+  height: 250px;
+  box-shadow: 2px 2px 4px #313131;
+  border-radius: 1.125rem;
 }
-section .seccion-aboutus .texto-aboutus p {
+section .seccion-aboutus .contenedor-aboutus1 div :first-child {
+  font-family: "extrabold-fond";
+}
+section .seccion-aboutus .contenedor-aboutus1 div p {
+  font-family: "regular-fond";
+  font-size: 22px;
+  color: #776140;
+  text-align: center;
+}
+section .seccion-aboutus .contenedor-aboutus2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+section .seccion-aboutus .contenedor-aboutus2 div .img-aboutus {
+  width: 250px;
+  height: 250px;
+  box-shadow: 2px 2px 4px #313131;
+  border-radius: 1.125rem;
+}
+section .seccion-aboutus .contenedor-aboutus2 div :first-child {
+  font-family: "extrabold-fond";
+}
+section .seccion-aboutus .contenedor-aboutus2 div p {
+  font-family: "regular-fond";
+  font-size: 22px;
+  color: #776140;
+  text-align: center;
+}
+section .seccion-aboutus .contenedor-aboutus3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+section .seccion-aboutus .contenedor-aboutus3 div .img-aboutus {
+  width: 250px;
+  height: 250px;
+  box-shadow: 2px 2px 4px #313131;
+  border-radius: 1.125rem;
+}
+section .seccion-aboutus .contenedor-aboutus3 div :first-child {
+  font-family: "extrabold-fond";
+}
+section .seccion-aboutus .contenedor-aboutus3 div p {
   font-family: "regular-fond";
   font-size: 22px;
   color: #776140;
@@ -252,7 +311,7 @@ main .titulos {
   margin-bottom: 5rem;
 }
 main .takeaway-texto {
-  font-family: "extrabold-fond";
+  font-family: "regular-fond";
   color: #776140;
   text-align: center;
   font-size: 2rem;
@@ -267,6 +326,8 @@ main .conteiner-takeaway .conteiner-local {
 main .conteiner-takeaway .conteiner-local .contenedor-img-local .img-local {
   width: 20rem;
   height: 25rem;
+  box-shadow: 4px 4px 8px #313131;
+  border-radius: 3.125rem;
 }
 main .conteiner-takeaway .conteiner-local .takeaway {
   font-family: "regular-fond";
@@ -282,6 +343,8 @@ main .conteiner-takeaway .conteiner-local .takeaway {
 main .conteiner-takeaway .conteiner-local .conteiner-bici .img-bici {
   width: 20rem;
   height: 25rem;
+  box-shadow: 4px 4px 8px #313131;
+  border-radius: 3.125rem;
 }
 
 /*Estilo sección T I E N D A*/
@@ -343,7 +406,7 @@ section .cards .cards-macarons .button-shop {
   font-size: 1.9rem;
 }
 .galeria .galeria-texto p {
-  font-family: "extrabold-fond";
+  font-family: "regular-fond";
   color: #776140;
   text-align: center;
   font-size: 1.9rem;
@@ -355,6 +418,7 @@ section .cards .cards-macarons .button-shop {
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  margin-top: 5rem;
 }
 .galeria .boxes .box {
   background-color: #f5f2f2;
@@ -455,7 +519,7 @@ main .titulos {
 }
 main div .contacto-texto {
   color: #776140;
-  font-family: "extrabold-fond";
+  font-family: "regular-fond";
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -537,23 +601,6 @@ main div .contacto div .map {
 }
 
 /*Responsive max width 1024px seccion ABOUT US*/
-@media (max-width: 1024px) {
-  .seccion-aboutus {
-    display: flex;
-    flex-direction: column;
-  }
-  .seccion-aboutus div .img-aboutus {
-    width: 18rem;
-    height: 18rem;
-    translate: 250px;
-  }
-  .seccion-aboutus .texto-aboutus .texto-aboutus p {
-    font-size: 0.5rem;
-    margin-left: 3rem;
-    text-align: center;
-    text-align: justify;
-  }
-}
 /*responsive max width 1024px seccion TAKEAWAY*/
 @media (max-width: 1024px) {
   .conteiner-local {
@@ -586,16 +633,68 @@ main div .contacto div .map {
   .seccion-aboutus {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+  }
+  .seccion-aboutus .contenedor-aboutus1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: 4rem;
-    margin: 4rem;
+    gap: 3rem;
   }
-  .seccion-aboutus .img-aboutus {
-    width: 480px;
-    height: 400px;
+  .seccion-aboutus .contenedor-aboutus1 div .img-aboutus {
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 4px #313131;
+    border-radius: 1.125rem;
   }
-  .seccion-aboutus .texto-aboutus p {
+  .seccion-aboutus .contenedor-aboutus1 div :first-child {
+    font-family: "extrabold-fond";
+  }
+  .seccion-aboutus .contenedor-aboutus1 div p {
+    font-family: "regular-fond";
+    font-size: 22px;
+    color: #776140;
+    text-align: center;
+  }
+  .seccion-aboutus .contenedor-aboutus2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .seccion-aboutus .contenedor-aboutus2 div .img-aboutus {
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 4px #313131;
+    border-radius: 1.125rem;
+  }
+  .seccion-aboutus .contenedor-aboutus2 div :first-child {
+    font-family: "extrabold-fond";
+  }
+  .seccion-aboutus .contenedor-aboutus2 div p {
+    font-family: "regular-fond";
+    font-size: 22px;
+    color: #776140;
+    text-align: center;
+  }
+  .seccion-aboutus .contenedor-aboutus3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .seccion-aboutus .contenedor-aboutus3 div .img-aboutus {
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 4px #313131;
+    border-radius: 1.125rem;
+  }
+  .seccion-aboutus .contenedor-aboutus3 div :first-child {
+    font-family: "extrabold-fond";
+  }
+  .seccion-aboutus .contenedor-aboutus3 div p {
     font-family: "regular-fond";
     font-size: 22px;
     color: #776140;
@@ -678,17 +777,71 @@ main div .contacto div .map {
   .seccion-aboutus {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+  }
+  .seccion-aboutus .contenedor-aboutus1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: 4rem;
-    margin: 1rem;
+    gap: 3rem;
   }
-  .seccion-aboutus .img-aboutus {
-    width: 100px;
-    height: 100px;
+  .seccion-aboutus .contenedor-aboutus1 div .img-aboutus {
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 4px #313131;
+    border-radius: 1.125rem;
   }
-  .seccion-aboutus .texto-aboutus p {
-    font-size: 10px;
+  .seccion-aboutus .contenedor-aboutus1 div :first-child {
+    font-family: "extrabold-fond";
+  }
+  .seccion-aboutus .contenedor-aboutus1 div p {
+    font-family: "regular-fond";
+    font-size: 22px;
+    color: #776140;
+    text-align: center;
+  }
+  .seccion-aboutus .contenedor-aboutus2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .seccion-aboutus .contenedor-aboutus2 div .img-aboutus {
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 4px #313131;
+    border-radius: 1.125rem;
+  }
+  .seccion-aboutus .contenedor-aboutus2 div :first-child {
+    font-family: "extrabold-fond";
+  }
+  .seccion-aboutus .contenedor-aboutus2 div p {
+    font-family: "regular-fond";
+    font-size: 22px;
+    color: #776140;
+    text-align: center;
+  }
+  .seccion-aboutus .contenedor-aboutus3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .seccion-aboutus .contenedor-aboutus3 div .img-aboutus {
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 4px #313131;
+    border-radius: 1.125rem;
+  }
+  .seccion-aboutus .contenedor-aboutus3 div :first-child {
+    font-family: "extrabold-fond";
+  }
+  .seccion-aboutus .contenedor-aboutus3 div p {
+    font-family: "regular-fond";
+    font-size: 22px;
+    color: #776140;
     text-align: center;
   }
 }

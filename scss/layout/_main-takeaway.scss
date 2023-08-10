@@ -10,7 +10,7 @@ main{
         margin-bottom:5rem;
     }
     .takeaway-texto{
-        font-family:"extrabold-fond";
+        font-family:"regular-fond";
         color:#776140;  
         text-align: center;
         font-size: 2rem;
@@ -26,6 +26,8 @@ main{
                 .img-local{
                     width: 20rem;
                     height: 25rem;
+                    box-shadow: 4px 4px 8px #313131;
+                    border-radius: 3.125rem;
                 }
             }
             .takeaway{
@@ -43,6 +45,8 @@ main{
                 .img-bici{
                     width: 20rem;
                     height: 25rem;
+                    box-shadow: 4px 4px 8px #313131;
+                    border-radius: 3.125rem;
                 }
             }
 
