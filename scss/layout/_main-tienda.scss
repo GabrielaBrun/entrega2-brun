@@ -19,6 +19,10 @@ section{
             width: 200px;
             height: 350px;
             cursor: pointer;
+            &:hover{
+                transform: scale(1.2);
+                    box-shadow: 13px 15px 37px black;
+                }     
             .cards-img{
                 width: 100%;
             }
@@ -43,6 +47,9 @@ section{
                 font-family: "extrabold-fond";
                 color: #776140;
                 font-size: 0.9rem;
+                &:hover{
+                background-color: #F9C5DC ;
+                }
             }
         }
     }
@@ -74,8 +81,6 @@ section{
         align-items: center;
         gap:4rem;
         margin-top: 5rem;
-   
-      
         .box{
             background-color: #f5f2f2;
             box-shadow: 7px 7px 13px #313131;
@@ -84,6 +89,11 @@ section{
             width: 300px;
             height: 500px;
             cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+                transition: 0.3s;
+                box-shadow: 13px 15px 37px black;
+            }           
             img{
                 width: 100%;
             }
@@ -97,8 +107,8 @@ section{
                 @extend .cards-texto;
                 font-family: "regular-fond";
             }
-            .button-shop{
-                border-radius: 3.125rem;
+                .button-shop{
+                    border-radius: 3.125rem;
                 background-color:#F5F1EC;
                 border-style: solid;
                 border-color: #776140;
@@ -107,21 +117,15 @@ section{
                 font-family: "extrabold-fond";
                 color: #776140;
                 font-size: 0.9rem;
-            }
+                &:hover{
+                    background-color: #F9C5DC ;
+                }
+                }         
+          
         }
     }
-
-
-
 }
 
 
-.box:hover{
-    transform: scale(1.1);
-    box-shadow: 13px 15px 37px black;
-}
 
-.cards-macarons:hover{
-transform: scale(1.2);
-    box-shadow: 13px 15px 37px black;
-}
+

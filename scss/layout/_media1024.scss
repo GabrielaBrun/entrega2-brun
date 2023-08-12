@@ -1,16 +1,60 @@
 
-/*Responsive max width 1024px seccion ABOUT US*/
 
 
 
 
 
-/*responsive max width 1024px seccion TAKEAWAY*/
+
 
 @media(max-width:1024px){
-    .conteiner-local{
+    /*responsive max width 1024px seccion Home*/
+
+    .conteiner{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
     }
+/*responsive max width 1024px About us dentro de Home*/
+        section{
+            div{
+                .titulos{
+                }
+            }
+            .aboutus{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap:4rem;
+                margin: 1rem;
+                .imagen-aboutus{
+                        width:450px; 
+                        height: 400px;
+                        box-shadow: 4px 4px 8px #313131;
+                        border-radius: 3.125rem;
+                    }
+            }
+        }
+    
+    
+/*responsive max width 1024px seccion TAKEAWAY*/
+
+main{
+    .conteiner-takeaway{
+        .conteiner-local{
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+        }
+    }
+}
+
+
+
+
+
+
 }
 

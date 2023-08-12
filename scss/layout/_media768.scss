@@ -1,8 +1,9 @@
 
 
 
-/*responsive max width 768px FOOTER*/
 @media(max-width: 768px){
+    
+/*responsive max width 768px FOOTER*/
     .footer{
         display: flex;
         flex-direction: column;
@@ -10,9 +11,9 @@
         align-items: center;
         gap:3rem;
         }
-}
+
 /*responsive max width 768px seccion Home*/
-@media(max-width:768px){
+
     .conteiner{
         display: flex;
         flex-direction: column;
@@ -21,108 +22,49 @@
         gap: 3rem;
     }
     
-
-}
+    /*responsive max width 768px About us dentro de Home*/
+    section{
+        div{
+            .titulos{
+            }
+        }
+        .aboutus{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:4rem;
+            margin: 1rem;
+            .imagen-aboutus{
+                    width:450px; 
+                    height: 400px;
+                    box-shadow: 4px 4px 8px #313131;
+                    border-radius: 3.125rem;
+                }
+        }
+    }
 
 
 /*Responsive max width 768px seccion ABOUT US*/
-@media(max-width: 768px){
+
+section{
+
     .seccion-aboutus{
-        display: flex;
-        flex-direction: column;
         .contenedor-aboutus1{
             display: flex;
             flex-direction:column;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            div{
-                .img-aboutus{
-                    width: 250px;
-                    height: 250px;
-                    box-shadow: 2px 2px 4px #313131;
-                    border-radius: 1.125rem;
-                }
-            }
-            div{
-                :first-child{
-                font-family: "extrabold-fond";
-                }
-                p{
-                font-family: "regular-fond";
-                font-size: 22px;
-                color:#776140; 
-                text-align:center;
-                }
-            }
         }
         .contenedor-aboutus2{
             display: flex;
             flex-direction:column;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            div{
-                .img-aboutus{
-                    width: 250px;
-                    height: 250px;
-                    box-shadow: 2px 2px 4px #313131;
-                    border-radius: 1.125rem;
-                }
-            }
-            div{
-                :first-child{
-                font-family: "extrabold-fond";
-                }
-                p{
-                font-family: "regular-fond";
-                font-size: 22px;
-                color:#776140; 
-                text-align:center;
-                }
-            }
         }
         .contenedor-aboutus3{
             display: flex;
             flex-direction:column;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            div{
-                .img-aboutus{
-                    width: 250px;
-                    height: 250px;
-                    box-shadow: 2px 2px 4px #313131;
-                    border-radius: 1.125rem;
-                }
-            }
-            div{
-                :first-child{
-                font-family: "extrabold-fond";
-                }
-                p{
-                font-family: "regular-fond";
-                font-size: 22px;
-                color:#776140; 
-                text-align:center;
-                }
-            }
         }    
     }
-    
-        
-    
 }
 
-
-    
-
-/*responsive max width 768px seccion TIENDA*/
-
-
-@media(max-width:768px){
-    
-}
 
 
 
@@ -130,74 +72,70 @@
 
 
 
-@media (max-width:768px){
+
     main{
-            .titulos{
-            }
-            .takeaway-texto{
-            }
             .conteiner-takeaway{
                 .conteiner-local{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    .contenedor-img-local{
-                        .img-local{
-                            width: 20rem;
-                            height: 25rem;
+ 
+                }
+            }
+        }
+    
+
+/*responsive max width 768px seccion CONTACTO*/
+
+main{
+    .titulos{
+    text-align: center;
+    gap: 2.5re;
+    }
+    div{
+        .contacto-texto{
+            text-align: center;
+            text-align: justify;
+        } 
+        .contacto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            .formulario{
+                width: 300px;
+                height: 500px;
+                .form{
+                    margin: 2rem; 
+                    .formulario-texto-nombre{
+                    }
+                    .formulario-texto-email{
+                    }
+                    .formulario-texto-asunto{
+                    }
+                    .formulario-texto-mensaje{
+                        height: 150px;
                         }
                     }
-                    .takeaway{
-                        font-size: 1.1rem;
-                    }
-                    .conteiner-bici{
-                        .img-bici{
-                            width: 20rem;
-                            height: 25rem;
-                        }
-                    }  
+                }
+            }
+            div{
+                .map{
+                    width: 250px;
+                    height: 250px;
                 }
             }
         }
     }
-
-
-/*responsive max width 768px seccion CONTACTO*/
-@media(max-width:768px){
-    .titulos{
-        text-align: center;
-    }
-    .contacto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2.5rem;
-        .contacto-texto{
-            text-align: center;
-            text-align: justify;
-        }
-    }
-    .formulario{
-        width: 300px;
-        height: 500px;
-        .formulario-texto-mensaje{
-            width: 100px;
-            height: 27px;
-        }
-    
-
-        .formulario-texto-mensaje{
-        height: 150px;
-        }
-        
-
-    }
-    
-    .map{
-    width: 100%;
-    }
 }
+    
+
+
+
+
+
+
 
 
 

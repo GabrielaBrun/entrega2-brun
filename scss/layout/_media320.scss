@@ -1,7 +1,12 @@
 
-/*responsive footer*/
 @media(max-width: 320px){
+    .logo{
+        width: 12rem;
+        height: 6rem;
+        }
+        
 
+/*responsive 320px footer*/
     .footer{
 
         display: flex;
@@ -10,115 +15,132 @@
         align-items: center;
         gap:3rem;
         }
+        section{
+            div{
+                .titulos{
+                    font-family: "extrabold-fond";
+                    font-size: 2.5em;
+                    text-align:center;
+                    color:#776140 ;
+                    margin-top: 5rem;
+                    margin-bottom:5rem;
+                }
+        
+            }
+        }
+        .conteiner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            .conteiner-imagenes{
+                position: relative;
+                div{
+                    .img-bigdream{
+                        width: 18rem; 
+                        height: 18rem;
+                    }
+                }
+                div{
+                    a{
+                        position: absolute;
+                        top:7rem;
+                        left: 3rem;
+                        text-decoration: none;
+                        font-size: 1.9rem;
+                       &:hover{
+                            transform: scale(1.4);
+                        }
+                    }
+                }
+            }
+            .conteiner-gift{
+                position: relative;
+                div{
+                    .img-regalo{
+                        width: 18rem; 
+                        height: 18rem;
+
+                    }
+                }
+                div{
+                    a{
+                        position: absolute;
+                        top:7rem;
+                        left: 3rem;
+                        font-size: 1.9rem;
+                        color:#F5F1EC;
+                        &:hover{
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+        
+            }
+        }
+
+    
+/*responsive about us dentro de Home*/
+section{
+    div{
+        .titulos{
+            @include estilotitulos;
+        }
+    }
+    .aboutus{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap:4rem;
+        margin: 4rem;
+        .imagen-aboutus{
+                width:18rem;
+                height: 18rem;
+            }
+        
+        .texto-aboutus{
+            p{
+                font-family: "regular-fond";
+                font-size: 22px;
+                color:#776140; 
+                text-align:center;
+            }
+        }
+    }
 }
-/*responsive max width 320px seccion Home*/
-@media(max-width:320px){
-    .conteiner{
+
+
+/*Responsive max width 320px seccion ABOUT US*/
+
+section{
+    div{
+        .titulos{
+        }
+    }
+    .aboutus{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
+        gap:4rem;
+        margin: 1rem;
+        .imagen-aboutus{
+                width:250px; 
+                height: 200px;
+                box-shadow: 4px 4px 8px #313131;
+                border-radius: 3.125rem;
+            }
     }
-    
-
 }
 
-/*Responsive max width 320px seccion ABOUT US*/
-@media(max-width: 320px){
 
-    .seccion-aboutus{
-        display: flex;
-        flex-direction: column;
-     
-        .contenedor-aboutus1{
-            display: flex;
-            flex-direction:column;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            div{
-                .img-aboutus{
-                    width: 250px;
-                    height: 250px;
-                    box-shadow: 2px 2px 4px #313131;
-                    border-radius: 1.125rem;
-                }
-            }
-            div{
-                :first-child{
-                font-family: "extrabold-fond";
-                }
-                p{
-                font-family: "regular-fond";
-                font-size: 22px;
-                color:#776140; 
-                text-align:center;
-                }
-            }
-        }
-        .contenedor-aboutus2{
-            display: flex;
-            flex-direction:column;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            div{
-                .img-aboutus{
-                    width: 250px;
-                    height: 250px;
-                    box-shadow: 2px 2px 4px #313131;
-                    border-radius: 1.125rem;
-                }
-            }
-            div{
-                :first-child{
-                font-family: "extrabold-fond";
-                }
-                p{
-                font-family: "regular-fond";
-                font-size: 22px;
-                color:#776140; 
-                text-align:center;
-                }
-            }
-        }
-        .contenedor-aboutus3{
-            display: flex;
-            flex-direction:column;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            div{
-                .img-aboutus{
-                    width: 250px;
-                    height: 250px;
-                    box-shadow: 2px 2px 4px #313131;
-                    border-radius: 1.125rem;
-                }
-            }
-            div{
-                :first-child{
-                font-family: "extrabold-fond";
-                }
-                p{
-                font-family: "regular-fond";
-                font-size: 22px;
-                color:#776140; 
-                text-align:center;
-                }
-            }
-        }    
-    }
-    
-
-}
 
 
 /*responsive max width 320px seccion TIENDA*/
 
 
-@media(max-width:320px){
     .cards{
         display: flex;
         flex-direction: column;
@@ -131,16 +153,12 @@
         flex-direction: column;  
         }
         
-}
+
 
 /*responsive max width 320px seccion TAKEAWAY*/
 
-@media (max-width:320px){
+
 main{
-        .titulos{
-        }
-        .takeaway-texto{
-        }
         .conteiner-takeaway{
             .conteiner-local{
                 display: flex;
@@ -148,8 +166,8 @@ main{
                 justify-content: center;
                 .contenedor-img-local{
                     .img-local{
-                        width: 20rem;
-                        height: 25rem;
+                        width: 16rem;
+                        height: 21rem;
                     }
                 }
                 .takeaway{
@@ -157,14 +175,14 @@ main{
                 }
                 .conteiner-bici{
                     .img-bici{
-                        width: 20rem;
-                        height: 25rem;
+                        width: 16rem;
+                        height: 21rem;
                     }
                 }  
             }
         }
     }
-}
+
 
 
 
@@ -174,30 +192,64 @@ main{
 
 /*responsive max width 320px seccion CONTACTO*/
 
-@media (max-width:320px){
-.titulos{
+main{
+    .titulos{
     text-align: center;
-}
-.contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-    .contacto-texto{
-        text-align: center;
-        text-align: justify;
+    gap: 2.5re;
+    }
+    div{
+        .contacto-texto{
+            text-align: center;
+            text-align: justify;
+        } 
+        .contacto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            .formulario{
+                width: 300px;
+                height: 500px;
+                .form{
+                    margin: 2rem; 
+                    .formulario-texto-nombre{
+                    }
+                    .formulario-texto-email{
+                    }
+                    .formulario-texto-asunto{
+                    }
+                    .formulario-texto-mensaje{
+                        height: 150px;
+                        }
+                    }
+                }
+            }
+            div{
+                .map{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
     }
 }
-.formulario{
-    width: 300px;
-    height: 500px;
-}
-.formulario-texto-mensaje{
-  height: 150px;
- }
+    
 
-.map{
-    width:100%;
-}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

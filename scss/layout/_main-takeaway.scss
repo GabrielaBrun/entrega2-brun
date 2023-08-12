@@ -40,6 +40,11 @@ main{
                 gap: 2rem;
                 justify-content: center;
                 align-items: center;
+                div{
+                    :first-child{
+                        font-family:"extrabold-fond"  
+                    }
+                }
             }
             .conteiner-bici{
                 .img-bici{

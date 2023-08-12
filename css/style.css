@@ -59,6 +59,9 @@
 .principal .eatme {
   font-size: 70px;
 }
+.principal .eatme:hover {
+  transform: scale(1.5);
+}
 .principal a {
   text-decoration: none;
   font-family: "extrabold-fond";
@@ -137,28 +140,126 @@ section div .titulos {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-section .seccion-aboutus {
+section .aboutus {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 4rem;
   margin: 4rem;
 }
-section .seccion-aboutus .img-aboutus {
-  width: 480px;
+section .aboutus .imagen-aboutus {
+  width: 450px;
   height: 400px;
   box-shadow: 4px 4px 8px #313131;
   border-radius: 3.125rem;
 }
-section .seccion-aboutus .texto-aboutus p {
+section .aboutus .texto-aboutus p {
   font-family: "regular-fond";
   font-size: 22px;
   color: #776140;
   text-align: center;
 }
 
-.eatme:hover {
-  transform: scale(1.5);
+.informacion-compra {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+.informacion-compra .info1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  background-color: #f5f2f2;
+  border-radius: 1.125rem;
+}
+.informacion-compra .info1 img {
+  width: 100px;
+}
+.informacion-compra .info1 .pasos {
+  color: #776140;
+  font-family: "extrabold-fond";
+}
+.informacion-compra .info1 p {
+  color: #776140;
+  font-family: "regular-fond";
+}
+.informacion-compra .info2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  background-color: #f5f2f2;
+  border-radius: 1.125rem;
+}
+.informacion-compra .info2 img {
+  width: 100px;
+}
+.informacion-compra .info2 .pasos {
+  color: #776140;
+  font-family: "extrabold-fond";
+}
+.informacion-compra .info2 p {
+  color: #776140;
+  font-family: "regular-fond";
+}
+.informacion-compra .info3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  background-color: #f5f2f2;
+  border-radius: 1.125rem;
+}
+.informacion-compra .info3 img {
+  width: 100px;
+}
+.informacion-compra .info3 .pasos {
+  color: #776140;
+  font-family: "extrabold-fond";
+}
+.informacion-compra .info3 p {
+  color: #776140;
+  font-family: "regular-fond";
+}
+.informacion-compra .info4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  background-color: #f5f2f2;
+  border-radius: 1.125rem;
+}
+.informacion-compra .info4 img {
+  width: 100px;
+}
+.informacion-compra .info4 .pasos {
+  color: #776140;
+  font-family: "extrabold-fond";
+}
+.informacion-compra .info4 p {
+  color: #776140;
+  font-family: "regular-fond";
 }
 
 /*ESTILO F O O T E R*/
@@ -229,6 +330,8 @@ section div .titulos {
 section .seccion-aboutus {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
+  margin: 1rem;
 }
 section .seccion-aboutus .contenedor-aboutus1 {
   display: flex;
@@ -340,6 +443,9 @@ main .conteiner-takeaway .conteiner-local .takeaway {
   justify-content: center;
   align-items: center;
 }
+main .conteiner-takeaway .conteiner-local .takeaway div :first-child {
+  font-family: "extrabold-fond";
+}
 main .conteiner-takeaway .conteiner-local .conteiner-bici .img-bici {
   width: 20rem;
   height: 25rem;
@@ -372,6 +478,10 @@ section .cards .cards-macarons {
   height: 350px;
   cursor: pointer;
 }
+section .cards .cards-macarons:hover {
+  transform: scale(1.2);
+  box-shadow: 13px 15px 37px black;
+}
 section .cards .cards-macarons .cards-img {
   width: 100%;
 }
@@ -396,6 +506,9 @@ section .cards .cards-macarons .button-shop {
   font-family: "extrabold-fond";
   color: #776140;
   font-size: 0.9rem;
+}
+section .cards .cards-macarons .button-shop:hover {
+  background-color: #F9C5DC;
 }
 
 /*Gifts hechos con flex*/
@@ -429,6 +542,11 @@ section .cards .cards-macarons .button-shop {
   height: 500px;
   cursor: pointer;
 }
+.galeria .boxes .box:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 13px 15px 37px black;
+}
 .galeria .boxes .box img {
   width: 100%;
 }
@@ -452,15 +570,8 @@ section .cards .cards-macarons .button-shop {
   color: #776140;
   font-size: 0.9rem;
 }
-
-.box:hover {
-  transform: scale(1.1);
-  box-shadow: 13px 15px 37px black;
-}
-
-.cards-macarons:hover {
-  transform: scale(1.2);
-  box-shadow: 13px 15px 37px black;
+.galeria .boxes .box .button-shop:hover {
+  background-color: #F9C5DC;
 }
 
 .form-login {
@@ -600,26 +711,8 @@ main div .contacto div .map {
   border-radius: 3.125rem;
 }
 
-/*Responsive max width 1024px seccion ABOUT US*/
-/*responsive max width 1024px seccion TAKEAWAY*/
 @media (max-width: 1024px) {
-  .conteiner-local {
-    display: flex;
-    flex-direction: column;
-  }
-}
-/*responsive max width 768px FOOTER*/
-@media (max-width: 768px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-  }
-}
-/*responsive max width 768px seccion Home*/
-@media (max-width: 768px) {
+  /*responsive max width 1024px seccion Home*/
   .conteiner {
     display: flex;
     flex-direction: column;
@@ -627,133 +720,30 @@ main div .contacto div .map {
     align-items: center;
     gap: 3rem;
   }
-}
-/*Responsive max width 768px seccion ABOUT US*/
-@media (max-width: 768px) {
-  .seccion-aboutus {
-    display: flex;
-    flex-direction: column;
-  }
-  .seccion-aboutus .contenedor-aboutus1 {
+  /*responsive max width 1024px About us dentro de Home*/
+  section .aboutus {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
+    margin: 1rem;
   }
-  .seccion-aboutus .contenedor-aboutus1 div .img-aboutus {
-    width: 250px;
-    height: 250px;
-    box-shadow: 2px 2px 4px #313131;
-    border-radius: 1.125rem;
+  section .aboutus .imagen-aboutus {
+    width: 450px;
+    height: 400px;
+    box-shadow: 4px 4px 8px #313131;
+    border-radius: 3.125rem;
   }
-  .seccion-aboutus .contenedor-aboutus1 div :first-child {
-    font-family: "extrabold-fond";
-  }
-  .seccion-aboutus .contenedor-aboutus1 div p {
-    font-family: "regular-fond";
-    font-size: 22px;
-    color: #776140;
-    text-align: center;
-  }
-  .seccion-aboutus .contenedor-aboutus2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-  }
-  .seccion-aboutus .contenedor-aboutus2 div .img-aboutus {
-    width: 250px;
-    height: 250px;
-    box-shadow: 2px 2px 4px #313131;
-    border-radius: 1.125rem;
-  }
-  .seccion-aboutus .contenedor-aboutus2 div :first-child {
-    font-family: "extrabold-fond";
-  }
-  .seccion-aboutus .contenedor-aboutus2 div p {
-    font-family: "regular-fond";
-    font-size: 22px;
-    color: #776140;
-    text-align: center;
-  }
-  .seccion-aboutus .contenedor-aboutus3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-  }
-  .seccion-aboutus .contenedor-aboutus3 div .img-aboutus {
-    width: 250px;
-    height: 250px;
-    box-shadow: 2px 2px 4px #313131;
-    border-radius: 1.125rem;
-  }
-  .seccion-aboutus .contenedor-aboutus3 div :first-child {
-    font-family: "extrabold-fond";
-  }
-  .seccion-aboutus .contenedor-aboutus3 div p {
-    font-family: "regular-fond";
-    font-size: 22px;
-    color: #776140;
-    text-align: center;
-  }
-}
-/*responsive max width 768px seccion TIENDA*/
-/*responsive max width 768px seccion TAKE AWAY*/
-@media (max-width: 768px) {
+  /*responsive max width 1024px seccion TAKEAWAY*/
   main .conteiner-takeaway .conteiner-local {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  main .conteiner-takeaway .conteiner-local .contenedor-img-local .img-local {
-    width: 20rem;
-    height: 25rem;
-  }
-  main .conteiner-takeaway .conteiner-local .takeaway {
-    font-size: 1.1rem;
-  }
-  main .conteiner-takeaway .conteiner-local .conteiner-bici .img-bici {
-    width: 20rem;
-    height: 25rem;
-  }
 }
-/*responsive max width 768px seccion CONTACTO*/
 @media (max-width: 768px) {
-  .titulos {
-    text-align: center;
-  }
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-  }
-  .contacto .contacto-texto {
-    text-align: center;
-    text-align: justify;
-  }
-  .formulario {
-    width: 300px;
-    height: 500px;
-  }
-  .formulario .formulario-texto-mensaje {
-    width: 100px;
-    height: 27px;
-  }
-  .formulario .formulario-texto-mensaje {
-    height: 150px;
-  }
-  .map {
-    width: 100%;
-  }
-}
-/*responsive footer*/
-@media (max-width: 320px) {
+  /*responsive max width 768px FOOTER*/
   .footer {
     display: flex;
     flex-direction: column;
@@ -761,9 +751,7 @@ main div .contacto div .map {
     align-items: center;
     gap: 3rem;
   }
-}
-/*responsive max width 320px seccion Home*/
-@media (max-width: 320px) {
+  /*responsive max width 768px seccion Home*/
   .conteiner {
     display: flex;
     flex-direction: column;
@@ -771,82 +759,176 @@ main div .contacto div .map {
     align-items: center;
     gap: 3rem;
   }
-}
-/*Responsive max width 320px seccion ABOUT US*/
-@media (max-width: 320px) {
-  .seccion-aboutus {
+  /*responsive max width 768px About us dentro de Home*/
+  section .aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 1rem;
+  }
+  section .aboutus .imagen-aboutus {
+    width: 450px;
+    height: 400px;
+    box-shadow: 4px 4px 8px #313131;
+    border-radius: 3.125rem;
+  }
+  /*Responsive max width 768px seccion ABOUT US*/
+  section .seccion-aboutus .contenedor-aboutus1 {
     display: flex;
     flex-direction: column;
   }
-  .seccion-aboutus .contenedor-aboutus1 {
+  section .seccion-aboutus .contenedor-aboutus2 {
+    display: flex;
+    flex-direction: column;
+  }
+  section .seccion-aboutus .contenedor-aboutus3 {
+    display: flex;
+    flex-direction: column;
+  }
+  /*responsive max width 768px seccion TAKE AWAY*/
+  main .conteiner-takeaway .conteiner-local {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /*responsive max width 768px seccion CONTACTO*/
+  main .titulos {
+    text-align: center;
+    gap: 2.5re;
+  }
+  main div .contacto-texto {
+    text-align: center;
+    text-align: justify;
+  }
+  main div .contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3rem;
   }
-  .seccion-aboutus .contenedor-aboutus1 div .img-aboutus {
+  main div .contacto .formulario {
+    width: 300px;
+    height: 500px;
+  }
+  main div .contacto .formulario .form {
+    margin: 2rem;
+  }
+  main div .contacto .formulario .form .formulario-texto-mensaje {
+    height: 150px;
+  }
+  main div div .map {
     width: 250px;
     height: 250px;
-    box-shadow: 2px 2px 4px #313131;
-    border-radius: 1.125rem;
-  }
-  .seccion-aboutus .contenedor-aboutus1 div :first-child {
-    font-family: "extrabold-fond";
-  }
-  .seccion-aboutus .contenedor-aboutus1 div p {
-    font-family: "regular-fond";
-    font-size: 22px;
-    color: #776140;
-    text-align: center;
-  }
-  .seccion-aboutus .contenedor-aboutus2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-  }
-  .seccion-aboutus .contenedor-aboutus2 div .img-aboutus {
-    width: 250px;
-    height: 250px;
-    box-shadow: 2px 2px 4px #313131;
-    border-radius: 1.125rem;
-  }
-  .seccion-aboutus .contenedor-aboutus2 div :first-child {
-    font-family: "extrabold-fond";
-  }
-  .seccion-aboutus .contenedor-aboutus2 div p {
-    font-family: "regular-fond";
-    font-size: 22px;
-    color: #776140;
-    text-align: center;
-  }
-  .seccion-aboutus .contenedor-aboutus3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-  }
-  .seccion-aboutus .contenedor-aboutus3 div .img-aboutus {
-    width: 250px;
-    height: 250px;
-    box-shadow: 2px 2px 4px #313131;
-    border-radius: 1.125rem;
-  }
-  .seccion-aboutus .contenedor-aboutus3 div :first-child {
-    font-family: "extrabold-fond";
-  }
-  .seccion-aboutus .contenedor-aboutus3 div p {
-    font-family: "regular-fond";
-    font-size: 22px;
-    color: #776140;
-    text-align: center;
   }
 }
-/*responsive max width 320px seccion TIENDA*/
 @media (max-width: 320px) {
+  .logo {
+    width: 12rem;
+    height: 6rem;
+  }
+  /*responsive 320px footer*/
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  section div .titulos {
+    font-family: "extrabold-fond";
+    font-size: 2.5em;
+    text-align: center;
+    color: #776140;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .conteiner .conteiner-imagenes {
+    position: relative;
+  }
+  .conteiner .conteiner-imagenes div .img-bigdream {
+    width: 18rem;
+    height: 18rem;
+  }
+  .conteiner .conteiner-imagenes div a {
+    position: absolute;
+    top: 7rem;
+    left: 3rem;
+    text-decoration: none;
+    font-size: 1.9rem;
+  }
+  .conteiner .conteiner-imagenes div a:hover {
+    transform: scale(1.4);
+  }
+  .conteiner .conteiner-gift {
+    position: relative;
+  }
+  .conteiner .conteiner-gift div .img-regalo {
+    width: 18rem;
+    height: 18rem;
+  }
+  .conteiner .conteiner-gift div a {
+    position: absolute;
+    top: 7rem;
+    left: 3rem;
+    font-size: 1.9rem;
+    color: #F5F1EC;
+  }
+  .conteiner .conteiner-gift div a:hover {
+    transform: scale(1.3);
+  }
+  /*responsive about us dentro de Home*/
+  section div .titulos {
+    font-family: "extrabold-fond";
+    font-size: 2.5em;
+    text-align: center;
+    color: #776140;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  section .aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+    margin: 4rem;
+  }
+  section .aboutus .imagen-aboutus {
+    width: 18rem;
+    height: 18rem;
+  }
+  section .aboutus .texto-aboutus p {
+    font-family: "regular-fond";
+    font-size: 22px;
+    color: #776140;
+    text-align: center;
+  }
+  /*Responsive max width 320px seccion ABOUT US*/
+  section .aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 1rem;
+  }
+  section .aboutus .imagen-aboutus {
+    width: 250px;
+    height: 200px;
+    box-shadow: 4px 4px 8px #313131;
+    border-radius: 3.125rem;
+  }
+  /*responsive max width 320px seccion TIENDA*/
   .cards {
     display: flex;
     flex-direction: column;
@@ -857,51 +939,52 @@ main div .contacto div .map {
   .box {
     flex-direction: column;
   }
-}
-/*responsive max width 320px seccion TAKEAWAY*/
-@media (max-width: 320px) {
+  /*responsive max width 320px seccion TAKEAWAY*/
   main .conteiner-takeaway .conteiner-local {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   main .conteiner-takeaway .conteiner-local .contenedor-img-local .img-local {
-    width: 20rem;
-    height: 25rem;
+    width: 16rem;
+    height: 21rem;
   }
   main .conteiner-takeaway .conteiner-local .takeaway {
     font-size: 1.1rem;
   }
   main .conteiner-takeaway .conteiner-local .conteiner-bici .img-bici {
-    width: 20rem;
-    height: 25rem;
+    width: 16rem;
+    height: 21rem;
   }
-}
-/*responsive max width 320px seccion CONTACTO*/
-@media (max-width: 320px) {
-  .titulos {
+  /*responsive max width 320px seccion CONTACTO*/
+  main .titulos {
     text-align: center;
+    gap: 2.5re;
   }
-  .contacto {
+  main div .contacto-texto {
+    text-align: center;
+    text-align: justify;
+  }
+  main div .contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    gap: 3rem;
   }
-  .contacto .contacto-texto {
-    text-align: center;
-    text-align: justify;
-  }
-  .formulario {
+  main div .contacto .formulario {
     width: 300px;
     height: 500px;
   }
-  .formulario-texto-mensaje {
+  main div .contacto .formulario .form {
+    margin: 2rem;
+  }
+  main div .contacto .formulario .form .formulario-texto-mensaje {
     height: 150px;
   }
-  .map {
-    width: 100%;
+  main div div .map {
+    width: 250px;
+    height: 250px;
   }
 }
 
