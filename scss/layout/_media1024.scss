@@ -51,6 +51,14 @@ main{
     }
 }
 
+/*responsive max width 1024px FOOTER*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap:3rem;
+    }
 
 
 

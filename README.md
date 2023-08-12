@@ -2,6 +2,9 @@
 ## Tienda Online de Macarons
 #### Bienvenido a la tienda online de Macarons Macarons-Delicious Sweets, una empresa especializada en Macarons, utilizando siempre los mejores ingredientes del mundo, con las más altas y vanguardistas técnicas de pastelería.
 
+#### Profesor: Maximiliano Cardenas
+#### Tutor: Damián Laterza
+
 #### Se utilizó: HTML-CSS-BOOTSTRAP
 
 ### Pagina HTML
