@@ -133,8 +133,10 @@ section{
     }
 }
 
+/*estilo info compra*/
+
 .informacion-compra{
-    background-color: #DAF0F3;
+    background-color: #f5f2f2;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -142,6 +144,7 @@ section{
     gap: 3rem;
     margin-top: 10rem;
     margin-bottom: 5rem;
+    padding: 1rem;
     .info1{
         display: flex;
         flex-direction: column;
@@ -151,7 +154,6 @@ section{
         text-align: center;
         width: 200px;
         height: 250px;
-        background-color: #f5f2f2;
         border-radius: 1.125rem;
         img{
             width:100px;
@@ -174,7 +176,6 @@ section{
         text-align: center;
         width: 200px;
         height: 250px;
-        background-color: #f5f2f2;
         border-radius: 1.125rem;
         img{
         width:100px;
@@ -198,7 +199,6 @@ section{
         text-align: center;
         width: 200px;
         height: 250px;
-        background-color: #f5f2f2;
         border-radius: 1.125rem;
         img{
         width:100px;
@@ -222,7 +222,6 @@ section{
         text-align: center;
         width: 200px;
         height: 250px;
-        background-color: #f5f2f2;
         border-radius: 1.125rem;
         img{
         width:100px;

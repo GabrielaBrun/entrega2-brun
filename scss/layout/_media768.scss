@@ -3,14 +3,7 @@
 
 @media(max-width: 768px){
     
-/*responsive max width 768px FOOTER*/
-    .footer{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-        gap:3rem;
-        }
+
 
 /*responsive max width 768px seccion Home*/
 
@@ -128,6 +121,18 @@ main{
             }
         }
     }
+
+/*responsive max width 768px FOOTER*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap:3rem;
+    }
+
+
+
 }
     
 

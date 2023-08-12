@@ -6,15 +6,7 @@
         }
         
 
-/*responsive 320px footer*/
-    .footer{
-
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-        gap:3rem;
-        }
+/*responsive 320px  Home*/
         section{
             div{
                 .titulos{
@@ -70,7 +62,6 @@
                         top:7rem;
                         left: 3rem;
                         font-size: 1.9rem;
-                        color:#F5F1EC;
                         &:hover{
                             transform: scale(1.3);
                         }
@@ -94,7 +85,7 @@ section{
         justify-content: space-evenly;
         align-items: center;
         gap:4rem;
-        margin: 4rem;
+        margin: 2rem;
         .imagen-aboutus{
                 width:18rem;
                 height: 18rem;
@@ -233,6 +224,16 @@ main{
             }
         }
     }
+
+    /*responsive 320px footer*/
+    .footer{
+
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        gap:3rem;
+        }
 }
     
 
